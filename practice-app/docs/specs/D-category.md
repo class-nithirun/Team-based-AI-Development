@@ -18,7 +18,7 @@
 - [ ] แตก branch `feature/category` จาก `main` ล่าสุด และ `npm install` แล้ว
 - [ ] `npm test` ผ่านก่อนเริ่มแก้ (ถ้าไม่ผ่านตั้งแต่ต้น ให้แจ้งทีม อย่าแก้เอง)
 - [ ] อ่าน `AGENTS.md` แล้ว
-- [ ] ใช้ชื่อฟิลด์ `category` (string) ตาม `docs/decisions.md` D-004
+- [ ] ใช้ชื่อฟิลด์ `category` (string) ตาม `docs/memory/decisions.md` D-004
 
 ## 3. Contract — สิ่งที่คนอื่นจะพึ่งพา
 

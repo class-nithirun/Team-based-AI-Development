@@ -43,7 +43,7 @@ npm test                 # รัน test ทั้งหมด
 |---|---|
 | [`AGENTS.md`](AGENTS.md) | อ่านก่อนเริ่มงานทุกครั้ง — stack, คำสั่ง, ไฟล์ร่วม, กติกา, นิยามของคำว่า "เสร็จ" |
 | [`docs/specs/`](docs/specs/) | spec ของแต่ละฟีเจอร์ + แม่แบบ `_TEMPLATE.md` |
-| [`docs/decisions.md`](docs/decisions.md) | เหตุผลของการออกแบบ (เพิ่มต่อท้ายอย่างเดียว) |
+| [`docs/memory/decisions.md`](docs/memory/decisions.md) | เหตุผลของการออกแบบ (เพิ่มต่อท้ายอย่างเดียว) — กติกาของโฟลเดอร์อยู่ใน [`docs/memory/README.md`](docs/memory/README.md) |
 | [`.clinerules/workflows/`](.clinerules/workflows/) | `/check-before-pr.md` · `/deploy.md` · `/new-spec.md` — ขั้นตอนงานซ้ำใน Cline |
 
 สถานะงานดูที่ Board ของทีม
