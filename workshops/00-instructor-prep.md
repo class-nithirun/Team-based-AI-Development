@@ -47,6 +47,9 @@
 | ☐ | `CODEOWNERS` | เปลี่ยนชื่อผู้สอน แล้วปลดคอมเมนต์บรรทัดกลุ่มคู่ (G1↔G2, G3↔G4) หลังรู้ username ผู้เรียน |
 | ☐ | Branch protection / Ruleset ของ `main` | PR + CI (`CI / api`, `CI / web`) + code owner review — **ubu-biolink เป็น private ของบัญชีฟรี ใช้ Ruleset ไม่ได้** ดูหัวข้อ H |
 | ☐ | เชิญผู้เรียนเป็น Collaborator | จาก username ที่ได้ใน WS4.4 (สิทธิ์ Write) |
+| ☐ | **Project Board "BioLink Workshop"** | repo → Projects → New project → Board · คอลัมน์ `Todo` `In Progress` `In Review` `Done` · Workflows เปิด *Auto-add to project* (repo ubu-biolink), *Item closed* → Done, *Pull request merged* → Done · Link project เข้ากับ repo ให้ผู้เรียนเห็น |
+| ☐ | **สร้างการ์ด 20 ใบ** (Issue + label + Milestone) | `gh auth refresh -s project` แล้ว `bash workshops/scripts/seed-day2-cards.sh <OWNER>/ubu-biolink <เลข project>` — ได้การ์ด Design Doc 4 ใบ (Assign ผู้ประสาน) + โมดูล 16 ใบ จาก [day2/cards/](day2/cards/) · Assign เจ้าของโมดูลได้ทันทีหลังรู้ username หรือให้ผู้เรียน Assign เองใน WS5.1 |
+| ☐ | พิมพ์ใบ Loop | [day2/loop-1-card.pdf](day2/loop-1-card.pdf) คนละ 1 แผ่น (A4) |
 | ☐ | ซ้อม "ตรวจ 4 ข้อ" | บนเครื่องที่ใช้สอน 1 รอบ — ยืนยันว่า agent ปฏิเสธจริงในเวอร์ชัน Kilo ที่ใช้ |
 | ☐ | ซ้อมสาธิต Expertise | ตาม `instructor-only/demo/README.md` (Design Doc → Prompt → Build → Review) |
 

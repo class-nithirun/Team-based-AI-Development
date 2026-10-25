@@ -5,7 +5,7 @@
 | **ตำแหน่ง** | Day 2 · Session 7 |
 | **เวลา** | 90 นาที (13:00–14:30) |
 | **รูปแบบ** | รายบุคคล (เจ้าของโมดูล) |
-| **สไลด์** | หน้า 197–199 (UBU SAGE Camp v2) |
+| **สไลด์** | หน้า 198–200 (UBU SAGE Camp v2) |
 | **ผลลัพธ์** | โมดูลถึง Core Done และเปิด PR `feature/<การ์ด>` → `feature/<กลุ่ม>` |
 
 > ทำใน repo `ubu-biolink` branch กลุ่มที่แตกจาก `instructor/revamp-workshop-base` — รายละเอียดเต็มอยู่ใน `docs/workshop/README.md` ของ repo นั้น
@@ -49,17 +49,19 @@ public ต้องไม่เห็นรายการที่ซ่อน 
 ### ขั้นที่ 5 — handoff รอบ build → review แล้วเปิด PR
 
 ```bash
+git commit -m "feat(<โมดูล>): dashboard + public section (#N)"
 git push
 gh pr create --base feature/<กลุ่ม> --fill
 ```
 
-ใช้ PR template ที่ขึ้นเอง · รอ Comment ของ AI Review bot
+ใช้ PR template ที่ขึ้นเอง · ในคำอธิบายใส่ **`Part of #N`** (ยังไม่ปิดการ์ด — จะปิดตอน PR กลุ่มเข้า `main`) · ย้ายการ์ดบน Board ไป **In Review** · รอ Comment ของ AI Review bot
 
 ## ✅ ต้องเห็น
 
 - [ ] ส่วนของโมดูลขึ้นบน `/u/kamon.j`
 - [ ] `npm test` + `build:web` ผ่าน
 - [ ] PR เปิดแล้วและมี Comment ของ Bot
+- [ ] PR มี `Part of #N` และการ์ดอยู่ In Review
 
 ## 🔧 ปัญหาที่พบบ่อย
 
@@ -70,6 +72,6 @@ gh pr create --base feature/<กลุ่ม> --fill
 
 ## 🧑‍🏫 หมายเหตุสำหรับผู้สอน/TA
 
-- เสร็จก่อน → ทำ Extra ที่เลือกไว้ หรือไปช่วยรีวิว
+- เสร็จก่อน → ทำ Extra ที่เลือกไว้ (เปิด **Issue ใหม่** label `extra` แล้ววน Loop ของการ์ดอีกรอบ) หรือไปช่วยรีวิว
 
 **ต่อไป →** [WS8.1 รีวิวโค้ด 3 ชั้น](ws-8.1-code-review.md)

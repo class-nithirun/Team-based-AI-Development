@@ -5,7 +5,7 @@
 | **ตำแหน่ง** | Day 2 · Session 8 |
 | **เวลา** | 30 นาที (15:30–16:00) |
 | **รูปแบบ** | ผู้ประสานกลุ่ม (สมาชิกช่วยตรวจ) |
-| **สไลด์** | หน้า 209–210 (UBU SAGE Camp v2) |
+| **สไลด์** | หน้า 210–211 (UBU SAGE Camp v2) |
 | **ผลลัพธ์** | งานทั้ง 4 กลุ่มอยู่ใน `main` · CI เขียว · inbox ของทุกกลุ่มอยู่ใน `main` |
 
 > ทำใน repo `ubu-biolink` branch กลุ่มที่แตกจาก `instructor/revamp-workshop-base` — รายละเอียดเต็มอยู่ใน `docs/workshop/README.md` ของ repo นั้น
@@ -34,6 +34,8 @@ Squash and merge
 gh pr create --base main --head feature/<กลุ่ม> --fill
 ```
 
+ในคำอธิบาย PR ใส่ `Closes #…` **ทีละบรรทัดครบทุกการ์ดของกลุ่ม** (การ์ด Design Doc + 4 โมดูล + Extra) — เมื่อ merge แล้ว GitHub ปิด Issue และย้ายการ์ดไป **Done** ให้เอง (แบบ WS3.3)
+
 ### ขั้นที่ 4 — merge ตามคิว G1 → G2 → G3 → G4
 
 เมื่อ CI `CI / api` และ `CI / web` เขียว — อย่า merge พร้อมกัน
@@ -51,6 +53,7 @@ npm run db:setup && npm test
 - [ ] `main` มีงานของทั้ง 4 กลุ่ม
 - [ ] CI บน `main` เขียว
 - [ ] มี `docs/memory/inbox/group-N.md` ครบ 4 กลุ่ม
+- [ ] Board: การ์ดของกลุ่มอยู่ **Done** ครบ (Milestone "BioLink Workshop" ใกล้ 100%)
 
 ## 🔧 ปัญหาที่พบบ่อย
 

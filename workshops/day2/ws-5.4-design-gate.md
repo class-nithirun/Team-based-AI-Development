@@ -5,7 +5,7 @@
 | **ตำแหน่ง** | Day 2 · Session 5 |
 | **เวลา** | 10 นาที (10:20–10:30) |
 | **รูปแบบ** | กลุ่ม + ผู้สอน |
-| **สไลด์** | หน้า 186, 190 (UBU SAGE Camp v2) |
+| **สไลด์** | หน้า 187, 191 (UBU SAGE Camp v2) |
 | **ผลลัพธ์** | ตรา ✅ ของกลุ่ม และ spec ทุกการ์ดเปลี่ยนเป็น `สถานะ: Approved` |
 
 > ทำใน repo `ubu-biolink` branch กลุ่มที่แตกจาก `instructor/revamp-workshop-base` — รายละเอียดเต็มอยู่ใน `docs/workshop/README.md` ของ repo นั้น
@@ -33,11 +33,11 @@
 ### ขั้นที่ 4 — เปลี่ยน spec เป็น Approved แล้ว commit
 
 ```bash
-git commit -am "docs(spec): approve <การ์ด>"
+git commit -am "docs(spec): approve <การ์ด> (#N)"
 git push
 ```
 
-builder จะไม่เริ่มถ้า spec ยังเป็น Draft
+builder จะไม่เริ่มถ้า spec ยังเป็น Draft · ผู้ประสานติ๊กการ์ด Design Doc ของกลุ่ม (`[G<N>-0]`) แล้วย้ายไป **In Review**
 
 ## ✅ ต้องเห็น
 

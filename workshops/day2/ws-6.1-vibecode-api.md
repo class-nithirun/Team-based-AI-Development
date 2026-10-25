@@ -5,7 +5,7 @@
 | **ตำแหน่ง** | Day 2 · Session 6 |
 | **เวลา** | 75 นาที (10:45–12:00) |
 | **รูปแบบ** | รายบุคคล (เจ้าของโมดูล) |
-| **สไลด์** | หน้า 193–196 (UBU SAGE Camp v2) |
+| **สไลด์** | หน้า 194–197 (UBU SAGE Camp v2) |
 | **ผลลัพธ์** | API ของโมดูลเรียกด้วย curl ได้ + เทสต์ชั้น API ผ่าน + handoff ก่อนพักเที่ยง |
 
 > ทำใน repo `ubu-biolink` branch กลุ่มที่แตกจาก `instructor/revamp-workshop-base` — รายละเอียดเต็มอยู่ใน `docs/workshop/README.md` ของ repo นั้น
@@ -59,11 +59,20 @@ git diff
 
 ### ขั้นที่ 6 — ก่อนพักเที่ยง: handoff รอบ build แล้ว commit + push
 
+```bash
+git add apps/api docs/handoff        # เฉพาะไฟล์ของโมดูล — ห้าม git add .
+git commit -m "feat(<โมดูล>): add table and API (#N)"
+git push
+```
+
+commit เล็ก ๆ หลายครั้งได้ — ทุกข้อความลงท้าย `(#N)` แล้วจะเห็นเรียงในการ์ดบน GitHub (แบบ WS1.2)
+
 ## ✅ ต้องเห็น
 
 - [ ] curl ได้ทุก endpoint ตาม spec
 - [ ] `npm test` ผ่าน
 - [ ] `git status` มีเฉพาะไฟล์ของโมดูล
+- [ ] เปิดการ์ด #N บน GitHub เห็น commit ที่อ้าง `(#N)`
 
 ## 🔧 ปัญหาที่พบบ่อย
 

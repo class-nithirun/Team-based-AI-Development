@@ -5,7 +5,7 @@
 | **ตำแหน่ง** | Day 2 · Session 5 |
 | **เวลา** | 15 นาที (10:05–10:20) |
 | **รูปแบบ** | รายบุคคล (เจ้าของโมดูล) |
-| **สไลด์** | หน้า 189 (UBU SAGE Camp v2) |
+| **สไลด์** | หน้า 190 (UBU SAGE Camp v2) |
 | **ผลลัพธ์** | `docs/specs/<การ์ด>.md` (สถานะ Draft) + `docs/handoff/<การ์ด>.md` รอบ 1 commit แล้ว |
 
 > ทำใน repo `ubu-biolink` branch กลุ่มที่แตกจาก `instructor/revamp-workshop-base` — รายละเอียดเต็มอยู่ใน `docs/workshop/README.md` ของ repo นั้น
@@ -40,13 +40,20 @@ workflow สั่งให้ AI เขียนเป็นขั้นสุ�
 
 ```bash
 git add docs/specs docs/handoff docs/workshop/designs
-git commit -m "docs(spec): draft <การ์ด>"
+git commit -m "docs(spec): draft <การ์ด> (#N)"
 git push -u origin feature/<การ์ด>
 ```
+
+`#N` = เลข Issue ของการ์ด — GitHub จะโยง commit นี้เข้ากับการ์ดให้เอง
+
+### ขั้นที่ 6 — คอมเมนต์ในการ์ด (Issue #N)
+
+พิมพ์ path ของ spec เช่น `docs/specs/academic-cv.md — Draft รอ Design Gate` (ผู้สอนเปิดจากการ์ดได้ทันที)
 
 ## ✅ ต้องเห็น
 
 - [ ] ไฟล์ spec สถานะ Draft และ handoff รอบ 1
+- [ ] การ์ดมีคอมเมนต์ path ของ spec และเห็น commit ที่อ้าง `#N`
 - [ ] ไม่เหลือ `❓ รอตัดสินใจ`
 - [ ] `git status` ไม่มีไฟล์ใน `apps/`
 

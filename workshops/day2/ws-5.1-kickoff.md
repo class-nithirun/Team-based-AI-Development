@@ -5,7 +5,7 @@
 | **ตำแหน่ง** | Day 2 · Session 5 |
 | **เวลา** | 20 นาที (09:00–09:20) |
 | **รูปแบบ** | รายบุคคล (ผู้สอนสาธิตบนจอก่อน) |
-| **สไลด์** | หน้า 181–182 (UBU SAGE Camp v2) |
+| **สไลด์** | หน้า 182–183 (UBU SAGE Camp v2) |
 | **ผลลัพธ์** | ระบบรันได้บนเครื่อง · agent `designer` `builder` `reviewer` ขึ้นครบ · ตรวจล็อก 4 ข้อถูกปฏิเสธทุกข้อ |
 
 > ทำใน repo `ubu-biolink` branch กลุ่มที่แตกจาก `instructor/revamp-workshop-base` — รายละเอียดเต็มอยู่ใน `docs/workshop/README.md` ของ repo นั้น
@@ -22,7 +22,13 @@
 
 ## 👉 ขั้นตอน
 
-### ขั้นที่ 1 — สลับไป branch กลุ่ม แล้วแตก branch ของการ์ด
+> ทั้งวันทำตาม **Loop ของ 1 การ์ด** (สไลด์หน้า 165 · ใบพิมพ์ [loop-1-card.pdf](loop-1-card.pdf)) — ใช้ Issue · Board · branch · commit · PR แบบเดียวกับวันที่ 1
+
+### ขั้นที่ 1 — หยิบการ์ดบน Board แล้วแตก branch ของการ์ด
+
+1. เปิด repo `ubu-biolink` → แท็บ **Projects** → Board "BioLink Workshop"
+2. หาการ์ดของตัวเอง (เช่น `[G1-B] … — academic-cv`) → **Assign yourself** → ลากไป **In Progress** (ทักษะเดียวกับ WS3.2–3.3)
+3. จดเลข Issue ของการ์ด (`#N`) ไว้ — ใช้ใน commit และ PR ทั้งวัน
 
 ```bash
 git clone https://github.com/<OWNER>/ubu-biolink.git && cd ubu-biolink
@@ -66,6 +72,7 @@ npm run dev:web                   # Terminal 2
 
 ## ✅ ต้องเห็น
 
+- [ ] การ์ดของตัวเองอยู่ **In Progress** และมีชื่อตัวเองเป็น Assignee
 - [ ] `npm test` ผ่าน และหน้า `/u/kamon.j` เปิดได้
 - [ ] agent ขึ้นครบ 3 ตัว + workflow 3 ไฟล์
 - [ ] ตรวจล็อก 4 ข้อถูกปฏิเสธทั้งหมด

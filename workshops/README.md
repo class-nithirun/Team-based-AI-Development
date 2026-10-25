@@ -77,17 +77,20 @@
 
 ### Day 2 — Multi-agent Vibe Coding บน UBU BioLink (4 กลุ่ม × 4 โมดูล)
 
+> **ทั้งวันทำตาม Loop ของ 1 การ์ด** (สไลด์หน้า 165 · [loop-1-card.md](day2/loop-1-card.md) · ใบพิมพ์ A4 [loop-1-card.pdf](day2/loop-1-card.pdf)) — 1 การ์ด = 1 Issue = 1 branch = 1 spec = 1 PR
+> การ์ด 20 ใบ (4 Design Doc + 16 โมดูล) อยู่ที่ [day2/cards/](day2/cards/) · ผู้สอนสร้างเป็น Issue + Board ด้วย `scripts/seed-day2-cards.sh` (ดู [00-instructor-prep.md](00-instructor-prep.md) หัวข้อ C)
+
 | Session | ID | งาน | เวลา | สไลด์ | ไฟล์ |
 |---|---|---|---|---|---|
-| S5 (09:00–10:30) | WS5.1 | Kickoff: รันระบบ + ตรวจว่า agent ล็อกสิทธิ์จริง | 20′ | หน้า 181–182 | [ws-5.1-kickoff.md](day2/ws-5.1-kickoff.md) |
-| | WS5.2 | ระดมสมอง + Design Doc ของกลุ่ม | 45′ | หน้า 183–188 | [ws-5.2-design-doc.md](day2/ws-5.2-design-doc.md) |
-| | WS5.3 | Spec ของการ์ด + SELF_CHECK | 15′ | หน้า 189 | [ws-5.3-card-spec.md](day2/ws-5.3-card-spec.md) |
-| | WS5.4 | Design Gate | 10′ | หน้า 186, 190 | [ws-5.4-design-gate.md](day2/ws-5.4-design-gate.md) |
-| S6 (10:45–12:00) | WS6.1 | Vibecode รอบ 1: DB + API | 75′ | หน้า 193–196 | [ws-6.1-vibecode-api.md](day2/ws-6.1-vibecode-api.md) |
-| S7 (13:00–14:30) | WS7.1 | Vibecode รอบ 2: หน้าจอ + เทสต์ + PR | 90′ | หน้า 197–199 | [ws-7.1-vibecode-ui-tests.md](day2/ws-7.1-vibecode-ui-tests.md) |
-| S8 (14:45–16:30) | WS8.1 | รีวิวโค้ด 3 ชั้น | 45′ | หน้า 200–208 | [ws-8.1-code-review.md](day2/ws-8.1-code-review.md) |
-| | WS8.2 | รวมเข้า main + Memory inbox | 30′ | หน้า 209–210 | [ws-8.2-merge-main.md](day2/ws-8.2-merge-main.md) |
-| | WS8.3 | Demo บนหน้าเดียว | 30′ | หน้า 211 | [ws-8.3-demo.md](day2/ws-8.3-demo.md) |
+| S5 (09:00–10:30) | WS5.1 | Kickoff: รันระบบ + ตรวจว่า agent ล็อกสิทธิ์จริง | 20′ | หน้า 182–183 | [ws-5.1-kickoff.md](day2/ws-5.1-kickoff.md) |
+| | WS5.2 | ระดมสมอง + Design Doc ของกลุ่ม | 45′ | หน้า 184–189 | [ws-5.2-design-doc.md](day2/ws-5.2-design-doc.md) |
+| | WS5.3 | Spec ของการ์ด + SELF_CHECK | 15′ | หน้า 190 | [ws-5.3-card-spec.md](day2/ws-5.3-card-spec.md) |
+| | WS5.4 | Design Gate | 10′ | หน้า 187, 191 | [ws-5.4-design-gate.md](day2/ws-5.4-design-gate.md) |
+| S6 (10:45–12:00) | WS6.1 | Vibecode รอบ 1: DB + API | 75′ | หน้า 194–197 | [ws-6.1-vibecode-api.md](day2/ws-6.1-vibecode-api.md) |
+| S7 (13:00–14:30) | WS7.1 | Vibecode รอบ 2: หน้าจอ + เทสต์ + PR | 90′ | หน้า 198–200 | [ws-7.1-vibecode-ui-tests.md](day2/ws-7.1-vibecode-ui-tests.md) |
+| S8 (14:45–16:30) | WS8.1 | รีวิวโค้ด 3 ชั้น | 45′ | หน้า 201–209 | [ws-8.1-code-review.md](day2/ws-8.1-code-review.md) |
+| | WS8.2 | รวมเข้า main + Memory inbox | 30′ | หน้า 210–211 | [ws-8.2-merge-main.md](day2/ws-8.2-merge-main.md) |
+| | WS8.3 | Demo บนหน้าเดียว | 30′ | หน้า 212 | [ws-8.3-demo.md](day2/ws-8.3-demo.md) |
 
 > ตารางนี้คือตาราง "Workshop 1 วัน" ใน `docs/workshop/README.md` ของ ubu-biolink ที่ใส่ช่วงพักตามกำหนดการ SAGE (10:30–10:45 และ 14:30–14:45)
 > จึงเหลือเวลา Vibecode รอบ 1 และรีวิวน้อยกว่าตารางใน repo ช่วงละ 15 นาที · สไลด์ REA, Release/Deploy ของวันที่ 2 ถูกซ่อนไว้ท้ายชุด (ไม่อยู่ใน flow ของ branch)
