@@ -1,0 +1,27 @@
+# CODEOWNERS ของ ubu-biolink — แทน @INSTRUCTOR ด้วย GitHub username ของผู้สอน (ใส่ได้หลายคน คั่นด้วยเว้นวรรค)
+# บรรทัดที่อยู่ล่างมีผลเหนือบรรทัดบน · มีผลบังคับเมื่อเปิด "Require review from Code Owners" ใน Ruleset ของ main
+# (repo ส่วนตัวแบบ private บนแพ็กเกจ Free ใช้ Ruleset ไม่ได้ — ดู README-KIT.md)
+
+# ค่าเริ่มต้น: ไม่กำหนดเจ้าของ (ทีมรีวิวกันเองตามปกติ)
+
+# feature ของแต่ละกลุ่ม — ใส่ username ของสมาชิกกลุ่ม แล้วลบ # หน้าบรรทัด (ใส่ได้เมื่อรู้ชื่อโฟลเดอร์ของกลุ่มแล้ว)
+# /apps/api/src/features/courses/       @member1 @member2
+# /apps/web/app/dashboard/courses/      @member1 @member2
+
+# Spec และ Handoff — ใครก็ Review ได้ จึงไม่กำหนดเจ้าของ
+
+# ไฟล์ส่วนกลาง — ผู้สอนเท่านั้น
+/.github/                               @INSTRUCTOR
+/AGENTS.md                              @INSTRUCTOR
+/docs/memory/                           @INSTRUCTOR
+/docs/features.md                       @INSTRUCTOR
+/.kilo/                                 @INSTRUCTOR
+/.clinerules/                           @INSTRUCTOR
+/scripts/ai-review.mjs                  @INSTRUCTOR
+/apps/api/src/app.js                    @INSTRUCTOR
+/apps/api/src/features/index.js         @INSTRUCTOR
+/apps/api/src/features/_template/       @INSTRUCTOR
+/apps/api/src/middleware/               @INSTRUCTOR
+/apps/api/src/repositories/             @INSTRUCTOR
+/apps/api/db/migrate.js                 @INSTRUCTOR
+/apps/web/components/public/PublicProfile.jsx  @INSTRUCTOR
