@@ -135,7 +135,7 @@ blank_issues_enabled: false
 **macOS / Git Bash**
 
 ```bash
-R=<ORG>/<REPO>
+R=<OWNER>/<REPO>
 gh label create "type: feature"   -R $R --color 1D76DB --description "ฟีเจอร์ใหม่" --force
 gh label create "type: bug"       -R $R --color D73A4A --description "แก้บั๊ก" --force
 gh label create "type: task"      -R $R --color 0E8A16 --description "งานย่อย/เอกสาร/ตั้งค่า" --force
@@ -153,7 +153,7 @@ gh label create "ai-review"        -R $R --color 5319E7 --description "สั่
 **Windows PowerShell**
 
 ```powershell
-$R = "<ORG>/<REPO>"
+$R = "<OWNER>/<REPO>"
 gh label create "type: feature" -R $R --color 1D76DB --description "ฟีเจอร์ใหม่" --force
 gh label create "type: bug" -R $R --color D73A4A --description "แก้บั๊ก" --force
 gh label create "type: task" -R $R --color 0E8A16 --description "งานย่อย/เอกสาร/ตั้งค่า" --force
@@ -168,7 +168,7 @@ gh label create "blocked" -R $R --color 000000 --description "ติดอยู
 gh label create "ai-review" -R $R --color 5319E7 --description "สั่งให้ AI Review bot รีวิว PR นี้" --force
 ```
 
-✅ **ต้องเห็น:** `gh label list -R <ORG>/<REPO>` แสดง label ทั้ง 4 กลุ่ม
+✅ **ต้องเห็น:** `gh label list -R <OWNER>/<REPO>` แสดง label ทั้ง 4 กลุ่ม
 
 ### ขั้นที่ 4 — เปิด PR และ merge
 
@@ -210,7 +210,7 @@ gh pr create --base main --fill
 | อาการ | สาเหตุ | วิธีแก้ |
 |---|---|---|
 | New issue ไม่ขึ้นแม่แบบ | ไฟล์ยังไม่ merge เข้า `main` หรือ YAML ผิด | ตรวจว่าอยู่บน `main` ที่ path `.github/ISSUE_TEMPLATE/` และ indent ถูก (ใช้ space ไม่ใช่ tab) |
-| `gh label create` ถามสิทธิ์ | ใช้ `-R` ผิด repo | ตรวจชื่อ `<ORG>/<REPO>` |
+| `gh label create` ถามสิทธิ์ | ใช้ `-R` ผิด repo | ตรวจชื่อ `<OWNER>/<REPO>` |
 | AC เขียนว่า "ระบบต้องเร็ว" | ตรวจไม่ได้ | เขียนใหม่เป็นตัวเลข/เงื่อนไข เช่น "ตอบภายใน 1 วินาที เมื่อมี 10,000 รายการ" |
 
 ## 🧪 ท้าทายเพิ่ม

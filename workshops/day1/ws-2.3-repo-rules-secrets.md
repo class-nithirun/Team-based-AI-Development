@@ -4,7 +4,7 @@
 |---|---|
 | **ตำแหน่ง** | Day 1 · Session 2 |
 | **เวลา** | 20 นาที (ผู้สอนสาธิต 5′ → ทีมทำตาม 15′) |
-| **รูปแบบ** | ทีมละ 1 repo — **Module Lead เป็นคนกดตั้งค่า** คนอื่นดูและตรวจ |
+| **รูปแบบ** | ทีมละ 1 repo — **Module Lead (เจ้าของ repo) เป็นคนกดตั้งค่า** คนอื่นดูและตรวจ |
 | **สไลด์** | หน้า 35 |
 | **ผลลัพธ์** | repo ของทีมบังคับให้ทุกงานเข้า `main` ผ่าน PR + Approve + Code Owner |
 
@@ -14,10 +14,11 @@
 
 ## 📋 ต้องมีก่อนเริ่ม
 
-- สิทธิ์ **Admin** ใน repo (Module Lead ของทีม)
+- สิทธิ์ **Admin** ใน repo — Module Lead เป็นเจ้าของ repo ที่สร้างใน WS1.2 จึงมีสิทธิ์นี้อยู่แล้ว
+- 💡 หลังเปิด Ruleset แล้ว **PR ของ Module Lead เองก็ต้องให้เพื่อน Approve** (คนเปิด PR อนุมัติงานตัวเองไม่ได้) — ทุกคนได้ฝึกทั้งเปิด PR และรีวิว
 - รู้ GitHub username ของสมาชิกทีม (ใช้ใน `CODEOWNERS`)
 
-> ⚠️ Rulesets / Branch protection ของ repo แบบ **private** ต้องอยู่ในแพ็กเกจของ Organization ที่รองรับ ถ้าเมนู Rulesets เป็นสีเทา แจ้งผู้สอน
+> ⚠️ repo ทีมต้องเป็น **Public** (สร้างแบบนี้ใน WS1.2) — repo **private** บนบัญชีฟรีใช้ Ruleset ไม่ได้ (GitHub ขึ้น *Upgrade to GitHub Pro or make this repository public*) ถ้าเมนูเป็นสีเทา: Settings → General → Danger Zone → Change visibility → Public
 
 ## 👉 ขั้นตอน
 

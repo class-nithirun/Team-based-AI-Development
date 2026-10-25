@@ -113,7 +113,7 @@ gh pr create --base main --title "feat(<ชื่อ>): <สรุปสั้�
 เนื้อหาการ์ดเต็มอยู่ที่ [feature-cards/](feature-cards/) — ผู้สอนสร้างเป็น Issue ด้วยสคริปต์ (รันจากรากรีโปหลักสูตร):
 
 ```bash
-bash workshops/scripts/seed-day1-features.sh <ORG>/<REPO>
+bash workshops/scripts/seed-day1-features.sh <OWNER>/<REPO>
 ```
 
 ## ✅ Checkpoint (ตรวจตัวเอง)

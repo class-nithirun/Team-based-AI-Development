@@ -93,7 +93,7 @@ gh pr create --base main --fill
 
 ### ขั้นที่ 6 — แจ้ง GitHub username ให้ผู้สอน
 
-เขียน username ของทุกคนในทีมตามบทบาท ส่งให้ผู้สอน (เพื่อผูกกับ Team ใน Organization และ `CODEOWNERS`)
+เขียน username ของทุกคนในทีมตามบทบาท ส่งให้ผู้สอน (เพื่อใส่ใน `CODEOWNERS` และเชิญเข้า repo ของวันที่ 2)
 
 ## ✅ Checkpoint (ตรวจตัวเอง)
 

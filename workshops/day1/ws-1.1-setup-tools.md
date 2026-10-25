@@ -15,7 +15,7 @@
 ## 📋 ต้องมีก่อนเริ่ม
 
 - Notebook (Windows 10/11 หรือ macOS) สิทธิ์ติดตั้งโปรแกรม
-- บัญชี GitHub ที่เปิด 2FA แล้ว และเป็นสมาชิกของ Organization (ถ้ายังไม่ได้รับคำเชิญ ทำต่อได้ ขั้นที่ 5 ไม่ต้องใช้ Org)
+- บัญชี GitHub ที่เปิด 2FA แล้ว (ใช้บัญชีส่วนตัวได้ — Module Lead ของทีมจะเชิญเข้า repo ทีมใน WS1.2)
 
 ## 👉 ขั้นตอน
 
@@ -130,4 +130,4 @@ docker compose version
 - ระหว่าง Workshop นี้ให้ TA ช่วย `docker compose pull` (ดึง image PostgreSQL) บนเครื่องที่เน็ตช้า เพื่อไม่ให้ไปช้าใน Day 2
 - ความรู้เสริมสำหรับสอน: อธิบายว่า `gh` คือเครื่องมือที่ช่วยทำงานกับ GitHub ผ่าน Terminal (สร้าง PR/Issue/Release) จะใช้ต่อใน WS2.1 และ WS4.3
 
-**ต่อไป →** [WS1.2 เข้า Organization + Commit แรก](ws-1.2-first-commit.md)
+**ต่อไป →** [WS1.2 สร้าง repo ทีม + Commit แรก](ws-1.2-first-commit.md)

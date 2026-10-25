@@ -17,8 +17,11 @@
 
 | ตัวแปร | ความหมาย | ค่า |
 |---|---|---|
-| `<ORG>` | GitHub Organization ของคลาส | `ubu-central-dev-2569` |
-| `<REPO>` (Day 1) | Repo ฝึกหัดของทีม | `dms-practice-team<N>` (ผู้สอนแจ้ง) |
+| `<TEMPLATE>` | Repo แม่แบบของ Day 1 (กด Use this template) | `NcKitt/dms-practice-template` (ผู้สอนแจ้ง) |
+| `<OWNER>` | GitHub username ของ **Module Lead** = เจ้าของ repo ทีม | เช่น `somchai` |
+| `<REPO>` (Day 1) | Repo ฝึกหัดของทีม (Module Lead สร้างใน WS1.2) | `dms-practice-team<N>` |
+| `<INSTRUCTOR>` | GitHub username ของผู้สอน — เชิญเป็น Collaborator ทุก repo ทีม | ผู้สอนแจ้ง |
+| `<ORG>` | GitHub Organization ของคลาส (Day 2) | `ubu-central-dev-2569` |
 | `dms-central` (Day 2) | Repo ระบบ DMS กลางที่ทุกทีมร่วมพัฒนา | `<ORG>/dms-central` |
 | `<ชื่อ>` | ชื่อเล่น/username ตัวพิมพ์เล็กของคุณ ใช้ต่อท้ายชื่อกิ่ง | เช่น `somchai` |
 | `<N>` | เลข Issue | เช่น `12` |
@@ -37,8 +40,10 @@
 
 ## สมมติฐานเรื่อง Repository
 
-- **Day 1** แต่ละทีม (4–6 คน จัดจากแบบสำรวจ) ใช้ **repo ฝึกหัดของทีมเอง** `dms-practice-team<N>` สร้างจาก Template repository
-  ที่มี Starter Project อยู่ข้างใน ทุกคนในทีมมีสิทธิ์ Write และ Module Lead ของทีมเป็น Admin เพื่อฝึกตั้ง Ruleset / CI / Release ได้
+- **Day 1** แต่ละทีม (4–6 คน จัดจากแบบสำรวจ) ใช้ **repo ฝึกหัดของทีมเอง** `dms-practice-team<N>` — **Module Lead เป็นคนสร้าง**
+  จาก Template (`Use this template`) ใต้บัญชีของตัวเองแบบ Public แล้วเชิญเพื่อนเป็น Collaborator (สิทธิ์ Write) + เชิญผู้สอน
+  Module Lead จึงเป็นเจ้าของ repo จริง: ตั้ง Ruleset / CI / Release และอนุมัติ PR ส่วนเพื่อนฝึกเปิด PR และรีวิว
+  (ไม่ใช้ Fork เพราะ PR ของ repo ที่ fork จะชี้กลับไป repo ผู้สอน และ Issues/Actions ปิดไว้ — ดูเหตุผลใน WS1.2)
 - **Day 2** ทุกทีมทำงานใน **`dms-central`** repo เดียว ที่ติดตั้ง Kit (Memory hub, Agent, Workflow, AI Review bot) และมี Ruleset ป้องกัน `main` แล้ว
 - ถ้าเลือกใช้ repo เดียวทั้งห้องตั้งแต่ Day 1 ปรับได้ แต่ WS2.3 และ WS4.1 (ต้องใช้สิทธิ์ Admin) ต้องทำเป็นการสาธิตโดยผู้สอน
 
@@ -49,7 +54,7 @@
 | Session | ID | งาน | เวลา | สไลด์ | ไฟล์ |
 |---|---|---|---|---|---|
 | S1 (09:00–10:30) | WS1.1 | ตรวจและติดตั้งเครื่องมือ | 25′ | หน้า 17–18 | [ws-1.1-setup-tools.md](day1/ws-1.1-setup-tools.md) |
-| | WS1.2 | เข้า Organization + Commit แรก | 25′ | หน้า 19–20 | [ws-1.2-first-commit.md](day1/ws-1.2-first-commit.md) |
+| | WS1.2 | สร้าง repo ทีม + Commit แรก | 25′ | หน้า 19–20 | [ws-1.2-first-commit.md](day1/ws-1.2-first-commit.md) |
 | | WS1.3 | ตั้งค่า AI Agent (Cline + Kilo) และ API Key | 20′ | Session 1 | [ws-1.3-setup-ai-agent.md](day1/ws-1.3-setup-ai-agent.md) |
 | S2 (10:45–12:00) | WS2.1 | GitHub Flow รอบแรก: PR + Review | 25′ | หน้า 27–28 | [ws-2.1-pr-review.md](day1/ws-2.1-pr-review.md) |
 | | WS2.2 | จำลอง Merge Conflict และแก้ร่วมกัน | 20′ | หน้า 31 | [ws-2.2-merge-conflict.md](day1/ws-2.2-merge-conflict.md) |

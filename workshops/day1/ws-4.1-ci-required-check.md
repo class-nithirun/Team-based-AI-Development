@@ -117,7 +117,7 @@ Merge PR นี้เข้า `main` (ให้เพื่อน Approve)
 
 ## 🧪 ท้าทายเพิ่ม
 
-- เพิ่ม badge CI ใน README: `![CI](https://github.com/<ORG>/<REPO>/actions/workflows/ci.yml/badge.svg)`
+- เพิ่ม badge CI ใน README: `![CI](https://github.com/<OWNER>/<REPO>/actions/workflows/ci.yml/badge.svg)`
 - เพิ่ม `concurrency:` เพื่อยกเลิกการรันเก่าเมื่อ push ซ้ำ
 
 ## 🧑‍🏫 หมายเหตุสำหรับผู้สอน/TA

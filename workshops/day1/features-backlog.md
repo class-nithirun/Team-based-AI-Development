@@ -79,9 +79,9 @@ test/helpers.js  ──ใช้ร่วม──►  test/<ฟีเจอร�
 |---|---|---|
 | ☐ | Template repo มี practice-app ล่าสุด (stub 8 ฟีเจอร์ + `AGENTS.md` + `docs/` + `.clinerules/`) | คัดลอก `practice-app/` ไปที่รากของ template **ยกเว้น `.github/`** (เฉลย WS4.1) |
 | ☐ | ใส่เลข Issue ในหัว spec แต่ละฉบับ (ทางเลือก) | หลังรันสคริปต์ seed จะรู้เลข Issue — แก้ช่อง **Issue** ในหัว spec ของ repo ทีมได้ หรือปล่อยให้ผู้เรียนเติมเอง |
-| ☐ | สร้าง repo ทีม `dms-practice-team1…5` จาก template | ผ่าน `gh repo create <ORG>/<REPO> --template <ORG>/dms-practice-template --private` |
-| ☐ | สร้าง Label + การ์ด 8 ใบในทุก repo ทีม | `bash workshops/scripts/seed-day1-features.sh <ORG>/<REPO>` (รันจากรากรีโปหลักสูตร) |
-| ☐ | เพิ่มการ์ดเข้า Board ของทีม (ถ้าสร้าง Board ล่วงหน้า) | `gh project item-add <เลข> --owner <ORG> --url <issue-url>` หรือให้ผู้เรียนทำใน WS3.2 |
+| ☐ | repo ทีม `dms-practice-team1…5` | **Module Lead สร้างเองใน WS1.2** (Use this template → Public) แล้วเชิญผู้สอน — ผู้สอนกด Accept ทุกทีม |
+| ☐ | สร้าง Label + การ์ด 8 ใบในทุก repo ทีม | ช่วงพักกลางวัน: `bash workshops/scripts/seed-day1-features.sh <OWNER>/<REPO>` (รันจากรากรีโปหลักสูตร) |
+| ☐ | เพิ่มการ์ดเข้า Board ของทีม (ถ้าสร้าง Board ล่วงหน้า) | `gh project item-add <เลข> --owner <OWNER> --url <issue-url>` หรือให้ผู้เรียนทำใน WS3.2 |
 | ☐ | ตรวจว่า `npm ci && npm run lint && npm test` ผ่านใน repo ทีม | บนเครื่องสะอาด 1 เครื่อง |
 
 ### 5.2 เครื่องมือ AI
@@ -103,7 +103,7 @@ test/helpers.js  ──ใช้ร่วม──►  test/<ฟีเจอร�
 
 ## 6. แผนซ้อม (Dry Run) ของทีมเรา — 90 นาที
 
-ทำบน repo ทดลอง 1 อัน (เช่น `<ORG>/dms-practice-dryrun`) ให้สมาชิกทีมเราเล่นเป็นผู้เรียน
+ทำบน repo ทดลอง 1 อัน (เช่น `NcKitt/dms-practice-dryrun`) ให้สมาชิกทีมเราเล่นเป็นผู้เรียน
 
 | เวลา | ขั้นตอน | ผู้รับผิดชอบ | เสร็จเมื่อ |
 |---|---|---|---|
