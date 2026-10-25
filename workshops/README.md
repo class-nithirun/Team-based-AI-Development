@@ -53,23 +53,23 @@
 
 | Session | ID | งาน | เวลา | สไลด์ | ไฟล์ |
 |---|---|---|---|---|---|
-| S1 (09:00–10:30) | WS1.1 | ตรวจและติดตั้งเครื่องมือ | 25′ | หน้า 17–18 | [ws-1.1-setup-tools.md](day1/ws-1.1-setup-tools.md) |
-| | WS1.2 | สร้าง repo ทีม + Commit แรก | 25′ | หน้า 19–20 | [ws-1.2-first-commit.md](day1/ws-1.2-first-commit.md) |
-| | WS1.3 | ตั้งค่า AI Agent (Cline + Kilo) และ API Key | 20′ | Session 1 | [ws-1.3-setup-ai-agent.md](day1/ws-1.3-setup-ai-agent.md) |
-| S2 (10:45–12:00) | WS2.1 | GitHub Flow รอบแรก: PR + Review | 25′ | หน้า 27–28 | [ws-2.1-pr-review.md](day1/ws-2.1-pr-review.md) |
-| | WS2.2 | จำลอง Merge Conflict และแก้ร่วมกัน | 20′ | หน้า 31 | [ws-2.2-merge-conflict.md](day1/ws-2.2-merge-conflict.md) |
-| | WS2.3 | ตั้ง Ruleset, CODEOWNERS และกันความลับ | 20′ | หน้า 35 | [ws-2.3-repo-rules-secrets.md](day1/ws-2.3-repo-rules-secrets.md) |
-| S3 (13:00–14:30) | WS3.1 | Issue Template และ Label ของทีม | 15′ | หน้า 46 | [ws-3.1-issue-templates-labels.md](day1/ws-3.1-issue-templates-labels.md) |
-| | WS3.2 | สร้าง Kanban Board ของทีม | 15′ | หน้า 47 | [ws-3.2-kanban-board.md](day1/ws-3.2-kanban-board.md) |
-| | WS3.3 | Sprint: 8 ฟีเจอร์ = 8 Feature Branch (ทำด้วย AI) | 45′ | หน้า 48 | [ws-3.3-sprint-planning.md](day1/ws-3.3-sprint-planning.md) |
+| S1 (09:00–10:30) | WS1.1 | ตรวจและติดตั้งเครื่องมือ | 25′ | หน้า 17–20 | [ws-1.1-setup-tools.md](day1/ws-1.1-setup-tools.md) |
+| | WS1.2 | สร้าง repo ทีม + Commit แรก | 25′ | หน้า 21–34 | [ws-1.2-first-commit.md](day1/ws-1.2-first-commit.md) |
+| | WS1.3 | ตั้งค่า AI Agent (Cline + Kilo) และ API Key | 20′ | หน้า 37 | [ws-1.3-setup-ai-agent.md](day1/ws-1.3-setup-ai-agent.md) |
+| S2 (10:45–12:00) | WS2.1 | GitHub Flow รอบแรก: PR + Review | 25′ | หน้า 45–63 | [ws-2.1-pr-review.md](day1/ws-2.1-pr-review.md) |
+| | WS2.2 | จำลอง Merge Conflict และแก้ร่วมกัน | 20′ | หน้า 66–73 | [ws-2.2-merge-conflict.md](day1/ws-2.2-merge-conflict.md) |
+| | WS2.3 | ตั้ง Ruleset, CODEOWNERS และกันความลับ | 20′ | หน้า 77–86 | [ws-2.3-repo-rules-secrets.md](day1/ws-2.3-repo-rules-secrets.md) |
+| S3 (13:00–14:30) | WS3.1 | Issue Template และ Label ของทีม | 15′ | หน้า 97–103 | [ws-3.1-issue-templates-labels.md](day1/ws-3.1-issue-templates-labels.md) |
+| | WS3.2 | สร้าง Kanban Board ของทีม | 15′ | หน้า 104–110 | [ws-3.2-kanban-board.md](day1/ws-3.2-kanban-board.md) |
+| | WS3.3 | Sprint: 8 ฟีเจอร์ = 8 Feature Branch (ทำด้วย AI) | 45′ | หน้า 115–124 | [ws-3.3-sprint-planning.md](day1/ws-3.3-sprint-planning.md) |
 
 > ฟีเจอร์ A–H ของ practice-app: ภาพรวม การเตรียม และแผนซ้อมของทีมผู้สอนอยู่ที่ [day1/features-backlog.md](day1/features-backlog.md) · การ์ด [day1/feature-cards/](day1/feature-cards/) · เฉลย TA [day1/solutions/](day1/solutions/README.md)
-| S4 (14:45–16:00) | WS4.1 | สร้าง CI และตั้ง Required Check | 20′ | หน้า 59 | [ws-4.1-ci-required-check.md](day1/ws-4.1-ci-required-check.md) |
-| | WS4.2 | Dependabot และ Security scanning | 10′ | หน้า 60 | [ws-4.2-dependabot-security.md](day1/ws-4.2-dependabot-security.md) |
-| | WS4.3 | Release v0.0.1 | 15′ | หน้า 61 | [ws-4.3-release-v0.0.1.md](day1/ws-4.3-release-v0.0.1.md) |
-| | WS4.5 | Deploy ด้วย Docker | 20′ | — | [ws-4.5-deploy-docker.md](day1/ws-4.5-deploy-docker.md) |
-| | WS4.6 | Deploy ด้วย PM2 | 20′ | — | [ws-4.6-deploy-pm2.md](day1/ws-4.6-deploy-pm2.md) |
-| | WS4.4 | จัดทีมและเขียน Working Agreement (งานสุดท้ายของวัน) | 15′ | หน้า 64 | [ws-4.4-team-setup.md](day1/ws-4.4-team-setup.md) |
+| S4 (14:45–16:00) | WS4.1 | สร้าง CI และตั้ง Required Check | 20′ | หน้า 135–142 | [ws-4.1-ci-required-check.md](day1/ws-4.1-ci-required-check.md) |
+| | WS4.2 | Dependabot และ Security scanning | 10′ | หน้า 143–145 | [ws-4.2-dependabot-security.md](day1/ws-4.2-dependabot-security.md) |
+| | WS4.3 | Release v0.0.1 | 15′ | หน้า 146–152 | [ws-4.3-release-v0.0.1.md](day1/ws-4.3-release-v0.0.1.md) |
+| | WS4.5 | Deploy ด้วย Docker | 20′ | หน้า 155–156 | [ws-4.5-deploy-docker.md](day1/ws-4.5-deploy-docker.md) |
+| | WS4.6 | Deploy ด้วย PM2 | 20′ | หน้า 157–158 | [ws-4.6-deploy-pm2.md](day1/ws-4.6-deploy-pm2.md) |
+| | WS4.4 | จัดทีมและเขียน Working Agreement (งานสุดท้ายของวัน) | 15′ | หน้า 161 | [ws-4.4-team-setup.md](day1/ws-4.4-team-setup.md) |
 
 > ลำดับใน Session 4: WS4.1 → 4.2 → 4.3 → **4.5 → 4.6** → 4.4 — แอปที่ใช้ Deploy คือ [`practice-app/`](../practice-app/README.md)
 
