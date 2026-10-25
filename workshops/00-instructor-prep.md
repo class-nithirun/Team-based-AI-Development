@@ -13,7 +13,7 @@
 | ☐ | Team ย่อย `team-1` … `team-5` | แต่ละทีมผูกกับโมดูล (ใช้ใน `CODEOWNERS`) |
 | ☐ | เชิญผู้เรียนจาก GitHub username ในแบบสำรวจ | ส่งคำเชิญล่วงหน้า 2–3 วัน และเตือนให้กด Accept |
 | ☐ | Actions permissions | อนุญาต Actions ของ GitHub (`actions/*`); Workflow permissions: **Read and write** ถ้า Bot ต้อง comment (หรือกำหนด `pull-requests: write` ใน workflow) |
-| ☐ | ตรวจแพ็กเกจที่ใช้ได้ | Rulesets, required reviewers ของ Environment, Secret scanning / Push protection / Code scanning **ใช้ได้เฉพาะกับ repo สาธารณะหรือแพ็กเกจที่รองรับ** — ตรวจก่อนสัญญากับผู้เรียน |
+| ☐ | ตรวจแพ็กเกจที่ใช้ได้ | Rulesets, required reviewers ของ Environment, Secret scanning / Push protection / Code scanning **ใช้ได้เฉพาะกับ repo สาธารณะหรือแพ็กเกจที่รองรับ** — ตรวจก่อนสัญญากับผู้เรียน · ตรวจแล้ว 24 ต.ค.: repo private ของบัญชีฟรีตอบ *"Upgrade to GitHub Pro or make this repository public"* → repo ฝึก Day 1 ตั้งเป็น **public** (`NcKitt/dms-practice-template`, `NcKitt/dms-practice-dryrun`) แล้ว Ruleset ใช้ได้ · BioLink (private) ต้องใช้ทางเลือกในหัวข้อ "แพ็กเกจ GitHub" ด้านล่าง |
 
 ## B. Repo ฝึกหัด Day 1
 
@@ -28,17 +28,19 @@
 | ☐ | ตรวจว่า `npm test` ผ่านใน Template | บนเครื่องสะอาดและใน CI (ดู WS4.1) |
 | ☐ | สคริปต์ Label + ไฟล์ Issue Template ตัวอย่าง | เตรียมไว้ให้ผู้เรียนคัดลอกจาก WS3.1 |
 
-## C. `dms-central` สำหรับ Day 2
+## C. `ubu-biolink` สำหรับ Day 2
+
+> Day 2 ใช้ ubu-biolink branch `instructor/revamp-workshop-base` (Postgres, 5 กลุ่ม × 4 โมดูล) — ชุดไฟล์อยู่ที่ [`day2-kit-biolink/`](../day2-kit-biolink/README-KIT.md) ใน repo นี้ · ไฟล์ WS ของ Day 2 บางไฟล์ยังเขียนตาม DMS เดิม
 
 | ☐ | งาน | รายละเอียด |
 |---|---|---|
-| ☐ | ติดตั้ง **multi-agent-kit** ผ่าน PR | ตามคู่มือจับมือทำ บทที่ 2 (AGENTS.md, `.kilo/agents`, `.clinerules/workflows`, `docs/memory`, `docs/specs`, `docs/handoff`, CODEOWNERS, `ai-review.yml`, `scripts/ai-review.mjs`) |
-| ☐ | Ruleset ป้องกัน `main` | Require PR (1 approval) + Require Code Owners + Required check `test` + Block force push |
+| ☐ | ติดตั้ง **day2-kit-biolink** ผ่าน 2 PR | PR 1: `AGENTS.md`, `docs/memory/`, `docs/specs/_TEMPLATE.md`, `docs/handoff/_TEMPLATE.md`, `.clinerules/workflows/`, `.kilo/agents/` (ไม่กระทบระบบ) · PR 2: `.github/CODEOWNERS`, `.github/ai-review/`, `ai-review.yml`, `scripts/ai-review.mjs` — ขั้นตอนใน [`README-KIT.md`](../day2-kit-biolink/README-KIT.md) |
+| ☐ | Ruleset ป้องกัน `main` | Require PR (1 approval) + Require Code Owners + Required checks `CI / api`, `CI / web` + Block force push — **BioLink เป็น private ของบัญชี Free ใช้ Ruleset ไม่ได้** ดูหัวข้อ H |
 | ☐ | Variables / Secret ของ AI Review bot | `LLM_BASE_URL`, `LLM_MODEL` (Variables) และ `LLM_API_KEY` (Secret ใช้ `gh secret set`) + label `ai-review` — ทดสอบด้วย PR ที่ผิดโดยตั้งใจ (บทที่ 3–4 ของคู่มือจับมือทำ) |
 | ☐ | Board `DMS Board` ของ `dms-central` | 5 คอลัมน์เหมือน Day 1 + Fields Module / Priority / Size |
 | ☐ | Backlog เริ่มต้นของ 5 โมดูล | โมดูลละ ≥ 3 การ์ดขนาดเล็ก (ทีมจะเติมเองใน WS4.4 อีก ≥ 5) ติด label `module: …` |
 | ☐ | Issue ซ้อม stats endpoint | การ์ดสำรองที่ทุกคนทำได้ถ้าการ์ดของทีมยังไม่พร้อม (ดูบทที่ 5 คู่มือจับมือทำ) |
-| ☐ | `CODEOWNERS` ใช้ Team จริง | `/src/modules/<module>/ @ubu-central-dev-2569/team-N`, `/docs/memory/` และ `/.github/` → `maintainers` |
+| ☐ | `CODEOWNERS` ใส่ชื่อจริง | แทน `@INSTRUCTOR` ด้วย username ผู้สอน และเปิดบรรทัด `/apps/api/src/features/<ชื่อ>/` ของแต่ละกลุ่มเมื่อรู้ชื่อโฟลเดอร์ |
 
 ## D. สภาพแวดล้อมสำหรับ Deploy (WS8.2)
 
@@ -81,8 +83,27 @@
 
 ## G. วันก่อนอบรม (D-1)
 
-- ☐ เปิด `dms-central` แล้วตรวจ: `AGENTS.md` อยู่ชั้นบนสุด, Agent `designer` / `reviewer` ขึ้นใน Kilo, Workflow `/build.md` ขึ้นใน Cline
+- ☐ เปิด `ubu-biolink` แล้วตรวจ: `AGENTS.md` อยู่ชั้นบนสุด, Agent `designer` / `reviewer` ขึ้นใน Kilo, Workflow `/design.md` `/build.md` `/review.md` `/check-before-pr.md` ขึ้นใน Cline (เช็กลิสต์ท้าย README-KIT.md)
 - ☐ เปิด PR ทดสอบ 1 ใบ ให้ AI Review bot คอมเมนต์ได้ภายใน 2 นาที
 - ☐ ทดสอบ deploy ด้วย tag ทดลองจนครบวงจรและ rollback ได้
 - ☐ ตรวจให้ทุก Team ใน Org มีสมาชิกถูกต้อง และได้รับสิทธิ์ใน `dms-central`
 - ☐ สำรองสไลด์เป็น PDF และคัดลอก Workshop pack ไว้ในเครื่องผู้สอน (กัน Wi-Fi ล่ม)
+
+## H. แพ็กเกจ GitHub (สำคัญ — กระทบ WS2.3, WS4.1, WS8.2)
+
+ฟีเจอร์ที่หลักสูตรใช้และเงื่อนไข (ตรวจ 24 ต.ค. 2569):
+
+| ฟีเจอร์ | repo public (ฟรี) | repo private บัญชีฟรี | private บน GitHub Pro / Team |
+|---|---|---|---|
+| Rulesets / Required status check (WS2.3, WS4.1) | ✅ | ❌ | ✅ |
+| Environment + Required reviewers (Deploy WS8.2) | ✅ | ❌ | ⚠️ ต้องตรวจเอกสาร GitHub ก่อนซื้อ — กฎป้องกัน Environment บางข้อใน private ใช้ได้เฉพาะแพ็กเกจสูง (Enterprise) |
+| Secret scanning / Push protection | ✅ | ❌ | ต้อง GitHub Advanced Security |
+| Actions | ✅ ไม่จำกัด | ✅ โควตา 2,000 นาที/เดือน | ✅ |
+
+**ทางเลือก**
+
+1. **Day 1 — ใช้ repo public** (ทำแล้ว) practice-app ไม่มีข้อมูลจริงและไม่มีความลับ จึงเปิดสาธารณะได้
+2. **Day 2 — BioLink เป็นระบบจริงของมหาวิทยาลัย ไม่ควรเปิด public** เลือกอย่างใดอย่างหนึ่ง:
+   - ย้ายเข้า **Organization บนแพ็กเกจ GitHub Team** — ขอฟรีได้ผ่าน **GitHub Education** (Teacher / Campus program) ใช้เวลาอนุมัติหลายวัน ต้องยื่นทันที
+   - หรือเจ้าของ repo (ocka1234) อัปเกรดเป็น **GitHub Pro** — ได้ Rulesets / Required check ใน private ส่วนผู้อนุมัติก่อน Deploy ต้องตรวจเงื่อนไขแพ็กเกจอีกครั้ง
+   - หรือถ้าไม่ทันทั้งคู่: Day 2 สาธิต Ruleset/Environment บน repo public (dryrun) ให้ดู แล้วใน BioLink ใช้ "กติกาทีม + Reviewer ตรวจ PR" แทนการบังคับด้วยระบบ (บอกผู้เรียนตรง ๆ ว่าเป็นข้อจำกัดของแพ็กเกจ)

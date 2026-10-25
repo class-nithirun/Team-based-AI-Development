@@ -49,7 +49,8 @@
 | Session | ID | งาน | เวลา | สไลด์ | ไฟล์ |
 |---|---|---|---|---|---|
 | S1 (09:00–10:30) | WS1.1 | ตรวจและติดตั้งเครื่องมือ | 25′ | หน้า 17–18 | [ws-1.1-setup-tools.md](day1/ws-1.1-setup-tools.md) |
-| | WS1.2 | เข้า Organization + Commit แรก | 30′ | หน้า 19–20 | [ws-1.2-first-commit.md](day1/ws-1.2-first-commit.md) |
+| | WS1.2 | เข้า Organization + Commit แรก | 25′ | หน้า 19–20 | [ws-1.2-first-commit.md](day1/ws-1.2-first-commit.md) |
+| | WS1.3 | ตั้งค่า AI Agent (Cline + Kilo) และ API Key | 20′ | Session 1 | [ws-1.3-setup-ai-agent.md](day1/ws-1.3-setup-ai-agent.md) |
 | S2 (10:45–12:00) | WS2.1 | GitHub Flow รอบแรก: PR + Review | 25′ | หน้า 27–28 | [ws-2.1-pr-review.md](day1/ws-2.1-pr-review.md) |
 | | WS2.2 | จำลอง Merge Conflict และแก้ร่วมกัน | 20′ | หน้า 31 | [ws-2.2-merge-conflict.md](day1/ws-2.2-merge-conflict.md) |
 | | WS2.3 | ตั้ง Ruleset, CODEOWNERS และกันความลับ | 20′ | หน้า 35 | [ws-2.3-repo-rules-secrets.md](day1/ws-2.3-repo-rules-secrets.md) |
@@ -71,7 +72,7 @@
 
 | Session | ID | งาน | เวลา | สไลด์ | ไฟล์ |
 |---|---|---|---|---|---|
-| S5 (09:00–10:30) | WS5.1 | ตั้งค่า Cline และ Kilo Code | 15′ | หน้า 75–76 | [ws-5.1-setup-agents.md](day2/ws-5.1-setup-agents.md) |
+| S5 (09:00–10:30) | WS5.1 | ตรวจ Agent (ตั้งค่าแล้วใน WS1.3) | 5′ | หน้า 75–76 | [ws-5.1-setup-agents.md](day2/ws-5.1-setup-agents.md) |
 | | WS5.2 | ReAct Trace: ดู Agent คิดและลงมือ | 10′ | หน้า 77 | [ws-5.2-react-trace.md](day2/ws-5.2-react-trace.md) |
 | | WS5.3 | Memory hub: AI อ่านและจำอย่างไร | 15′ | หน้า 86 | [ws-5.3-memory-hub.md](day2/ws-5.3-memory-hub.md) |
 | | WS5.4 | รัน DMS Starter ด้วย Docker | 20′ | หน้า 87–88 | [ws-5.4-run-dms-starter.md](day2/ws-5.4-run-dms-starter.md) |
@@ -90,11 +91,11 @@
 
 | Session | ทฤษฎี | Workshop | Buffer / Checkpoint |
 |---|---|---|---|
-| S1 | 25′ (เปิดหลักสูตร 10′ + Git 15′) | 55′ (WS1.1 25′ + WS1.2 30′) | 10′ |
+| S1 | 15′ (Git 10′ + AI Agent/API Key 5′ — เปิดหลักสูตรอยู่ช่วง 08:45–09:00) | 70′ (WS1.1 25′ + WS1.2 25′ + WS1.3 20′) | 5′ |
 | S2 | 15′ | 65′ (25′ + 20′ + 20′) → ลดสาธิต WS2.3 เหลือ 15′ ได้ | — |
 | S3 | 15′ | 75′ (WS3.1 15′ + WS3.2 15′ + WS3.3 45′) | — (Template/Label/Board เตรียมไว้ก่อน ผู้เรียนแค่ตรวจและปรับ) |
 | S4 | 10′ | 95′ (WS4.1 20′ + WS4.2 สาธิต 5′ + WS4.3 15′ + WS4.5 20′ + WS4.6 20′ + WS4.4 15′) | — (ตามกำหนดการ SAGE 14:45–16:30 = 105′) |
-| S5 | 30′ (ReAct 15′ + Multi-agent/Memory hub 15′) | 60′ (15′ + 10′ + 15′ + 20′) | — (ให้ TA pre-pull Docker image ตอนลงทะเบียน) |
+| S5 | 25′ (ReAct 10′ + Multi-agent/Memory hub 15′ — "Agent คืออะไร" และ "Plan/Act" ย้ายไปสอนก่อน WS1.3 แล้ว) | 50′ (5′ + 10′ + 15′ + 20′) | — (ให้ TA pre-pull Docker image ตอนลงทะเบียน) |
 | S6 | 10′ | 75′ (25′ + 10′ + 40′) | — |
 | S7 | 10′ | 80′ (35′ + 20′ + 25′) | — |
 | S8 | 12′ (ความปลอดภัย/ธรรมาภิบาล) | 55′ (15′ + 20′ + 12′ + 8′) | 8′ Q&A + วุฒิบัตร |

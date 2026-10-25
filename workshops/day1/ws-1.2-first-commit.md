@@ -62,7 +62,7 @@ git branch --show-current
 เปิด `CONTRIBUTORS.md` เพิ่มบรรทัดของคุณ (ตามรูปแบบที่มีอยู่) เช่น:
 
 ```markdown
-- somchai — Backend developer (ทีม 2: ค้นหา/แท็ก)
+- somchai — Backend developer (ฟีเจอร์ B ค้นหาประกาศ)
 ```
 
 กด `Ctrl+S` (macOS: `Cmd+S`) เพื่อบันทึก
@@ -119,4 +119,4 @@ git push -u origin feat/hello-<ชื่อ>
 - ใช้ `CONTRIBUTORS.md` เป็นไฟล์ฝึกเพราะ conflict-free เมื่อแต่ละคนเพิ่มบรรทัดคนละบรรทัด (ถ้าเกิด conflict จริง ใช้เป็นตัวอย่างสอนได้)
 - สังเกตผู้เรียนที่ commit เข้า `main` ตรง ๆ ได้ (ก่อนเปิด Ruleset) — ชวนให้เห็นว่าทำไม WS2.3 จึงบังคับด้วยระบบ
 
-**ต่อไป →** พักเบรก แล้วเข้า [WS2.1 GitHub Flow รอบแรก](ws-2.1-pr-review.md)
+**ต่อไป →** [WS1.3 ตั้งค่า AI Agent และ API Key](ws-1.3-setup-ai-agent.md)
