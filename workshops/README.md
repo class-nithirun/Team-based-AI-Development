@@ -21,8 +21,8 @@
 | `<OWNER>` | GitHub username ของ **Module Lead** = เจ้าของ repo ทีม | เช่น `somchai` |
 | `<REPO>` (Day 1) | Repo ฝึกหัดของทีม (Module Lead สร้างใน WS1.2) | `dms-practice-team<N>` |
 | `<INSTRUCTOR>` | GitHub username ของผู้สอน — เชิญเป็น Collaborator ทุก repo ทีม | ผู้สอนแจ้ง |
-| `<ORG>` | GitHub Organization ของคลาส (Day 2) | `ubu-central-dev-2569` |
-| `dms-central` (Day 2) | Repo ระบบ DMS กลางที่ทุกทีมร่วมพัฒนา | `<ORG>/dms-central` |
+| `ubu-biolink` (Day 2) | Repo ระบบ BioLink ที่ทุกกลุ่มร่วมพัฒนา (private — เจ้าของเชิญผู้เรียนเป็น Collaborator) | branch `instructor/revamp-workshop-base` → branch กลุ่ม `feature/<กลุ่ม>` |
+| `<กลุ่ม>` / `<การ์ด>` (Day 2) | ชื่อกลุ่มและการ์ดตาม `docs/workshop/README.md` หัวข้อ B ของ ubu-biolink | `academic` / `academic-cv` |
 | `<ชื่อ>` | ชื่อเล่น/username ตัวพิมพ์เล็กของคุณ ใช้ต่อท้ายชื่อกิ่ง | เช่น `somchai` |
 | `<N>` | เลข Issue | เช่น `12` |
 | `<BASE_URL>` `<API_KEY>` `<MODEL_ID>` | ค่า AI ของมหาวิทยาลัย | ผู้สอนแจกในห้อง — **ห้ามบันทึกลงไฟล์** |
@@ -44,10 +44,12 @@
   จาก Template (`Use this template`) ใต้บัญชีของตัวเองแบบ Public แล้วเชิญเพื่อนเป็น Collaborator (สิทธิ์ Write) + เชิญผู้สอน
   Module Lead จึงเป็นเจ้าของ repo จริง: ตั้ง Ruleset / CI / Release และอนุมัติ PR ส่วนเพื่อนฝึกเปิด PR และรีวิว
   (ไม่ใช้ Fork เพราะ PR ของ repo ที่ fork จะชี้กลับไป repo ผู้สอน และ Issues/Actions ปิดไว้ — ดูเหตุผลใน WS1.2)
-- **Day 2** ทุกทีมทำงานใน **`dms-central`** repo เดียว ที่ติดตั้ง Kit (Memory hub, Agent, Workflow, AI Review bot) และมี Ruleset ป้องกัน `main` แล้ว
+- **Day 2** ทุกกลุ่มทำงานใน **`ubu-biolink`** repo เดียว (branch `instructor/revamp-workshop-base`) — **4 กลุ่ม × 4 โมดูล** ระบบละกลุ่ม ไม่ทับกัน
+  repo มีชุดไฟล์ AI ครบแล้ว (`AGENTS.md`, `.kilo/agents/` designer·builder·reviewer, `.clinerules/workflows/`, `docs/memory/` + inbox, `docs/specs/`, `docs/handoff/`, AI Review bot)
+  คู่มือของวันอยู่ที่ `docs/workshop/README.md` ใน repo นั้น — ไฟล์ WS วันที่ 2 ในโฟลเดอร์นี้เป็นฉบับย่อที่ผูกกับตารางเวลา SAGE
 - ถ้าเลือกใช้ repo เดียวทั้งห้องตั้งแต่ Day 1 ปรับได้ แต่ WS2.3 และ WS4.1 (ต้องใช้สิทธิ์ Admin) ต้องทำเป็นการสาธิตโดยผู้สอน
 
-## ตารางรวม Workshop (26 งาน)
+## ตารางรวม Workshop (24 งาน: วันที่ 1 = 15 · วันที่ 2 = 9)
 
 ### Day 1 — รากฐานการทำงานเป็นทีมบน GitHub
 
@@ -73,24 +75,22 @@
 
 > ลำดับใน Session 4: WS4.1 → 4.2 → 4.3 → **4.5 → 4.6** → 4.4 — แอปที่ใช้ Deploy คือ [`practice-app/`](../practice-app/README.md)
 
-### Day 2 — Multi-agent Vibe Coding ด้วย Cline และ Kilo Code
+### Day 2 — Multi-agent Vibe Coding บน UBU BioLink (4 กลุ่ม × 4 โมดูล)
 
 | Session | ID | งาน | เวลา | สไลด์ | ไฟล์ |
 |---|---|---|---|---|---|
-| S5 (09:00–10:30) | WS5.1 | ตรวจ Agent (ตั้งค่าแล้วใน WS1.3) | 5′ | หน้า 75–76 | [ws-5.1-setup-agents.md](day2/ws-5.1-setup-agents.md) |
-| | WS5.2 | ReAct Trace: ดู Agent คิดและลงมือ | 10′ | หน้า 77 | [ws-5.2-react-trace.md](day2/ws-5.2-react-trace.md) |
-| | WS5.3 | Memory hub: AI อ่านและจำอย่างไร | 15′ | หน้า 86 | [ws-5.3-memory-hub.md](day2/ws-5.3-memory-hub.md) |
-| | WS5.4 | รัน DMS Starter ด้วย Docker | 20′ | หน้า 87–88 | [ws-5.4-run-dms-starter.md](day2/ws-5.4-run-dms-starter.md) |
-| S6 (10:45–12:00) | WS6.1 | Designer: จากการ์ดสู่ Spec | 25′ | หน้า 98 | [ws-6.1-designer-spec.md](day2/ws-6.1-designer-spec.md) |
-| | WS6.2 | ประตูมนุษย์ที่ 1: อนุมัติ Spec | 10′ | หน้า 99 | [ws-6.2-human-gate-1.md](day2/ws-6.2-human-gate-1.md) |
-| | WS6.3 | Builder: Spec → Migration + API → PR | 40′ | หน้า 100 | [ws-6.3-builder-api-pr.md](day2/ws-6.3-builder-api-pr.md) |
-| S7 (13:00–14:30) | WS7.1 | Builder รอบ 2: หน้าจอ + Test | 35′ | หน้า 109 | [ws-7.1-ui-and-tests.md](day2/ws-7.1-ui-and-tests.md) |
-| | WS7.2 | Reviewer agent + AI Review bot | 20′ | หน้า 110 | [ws-7.2-reviewer-and-bot.md](day2/ws-7.2-reviewer-and-bot.md) |
-| | WS7.3 | Cross-team Review + บันทึกบทเรียน | 25′ | หน้า 112 | [ws-7.3-cross-team-review.md](day2/ws-7.3-cross-team-review.md) |
-| S8 (14:45–16:00) | WS8.1 | รวมโมดูลเข้า main | 15′ | หน้า 126 | [ws-8.1-integration.md](day2/ws-8.1-integration.md) |
-| | WS8.2 | Release v0.1.0 และ Deploy | 20′ | หน้า 127 | [ws-8.2-release-deploy.md](day2/ws-8.2-release-deploy.md) |
-| | WS8.3 | Sprint Review + Memory hub สด | 12′ | หน้า 128 | [ws-8.3-sprint-review-memory.md](day2/ws-8.3-sprint-review-memory.md) |
-| | WS8.4 | ทดสอบรั้วกั้น (สาธิตโดยผู้สอน) | 8′ | หน้า 129 | [ws-8.4-guardrail-tests.md](day2/ws-8.4-guardrail-tests.md) |
+| S5 (09:00–10:30) | WS5.1 | Kickoff: รันระบบ + ตรวจว่า agent ล็อกสิทธิ์จริง | 20′ | หน้า 181–182 | [ws-5.1-kickoff.md](day2/ws-5.1-kickoff.md) |
+| | WS5.2 | ระดมสมอง + Design Doc ของกลุ่ม | 45′ | หน้า 183–188 | [ws-5.2-design-doc.md](day2/ws-5.2-design-doc.md) |
+| | WS5.3 | Spec ของการ์ด + SELF_CHECK | 15′ | หน้า 189 | [ws-5.3-card-spec.md](day2/ws-5.3-card-spec.md) |
+| | WS5.4 | Design Gate | 10′ | หน้า 186, 190 | [ws-5.4-design-gate.md](day2/ws-5.4-design-gate.md) |
+| S6 (10:45–12:00) | WS6.1 | Vibecode รอบ 1: DB + API | 75′ | หน้า 193–196 | [ws-6.1-vibecode-api.md](day2/ws-6.1-vibecode-api.md) |
+| S7 (13:00–14:30) | WS7.1 | Vibecode รอบ 2: หน้าจอ + เทสต์ + PR | 90′ | หน้า 197–199 | [ws-7.1-vibecode-ui-tests.md](day2/ws-7.1-vibecode-ui-tests.md) |
+| S8 (14:45–16:30) | WS8.1 | รีวิวโค้ด 3 ชั้น | 45′ | หน้า 200–208 | [ws-8.1-code-review.md](day2/ws-8.1-code-review.md) |
+| | WS8.2 | รวมเข้า main + Memory inbox | 30′ | หน้า 209–210 | [ws-8.2-merge-main.md](day2/ws-8.2-merge-main.md) |
+| | WS8.3 | Demo บนหน้าเดียว | 30′ | หน้า 211 | [ws-8.3-demo.md](day2/ws-8.3-demo.md) |
+
+> ตารางนี้คือตาราง "Workshop 1 วัน" ใน `docs/workshop/README.md` ของ ubu-biolink ที่ใส่ช่วงพักตามกำหนดการ SAGE (10:30–10:45 และ 14:30–14:45)
+> จึงเหลือเวลา Vibecode รอบ 1 และรีวิวน้อยกว่าตารางใน repo ช่วงละ 15 นาที · สไลด์ REA, Release/Deploy ของวันที่ 2 ถูกซ่อนไว้ท้ายชุด (ไม่อยู่ใน flow ของ branch)
 
 ## สัดส่วนเวลาแต่ละ Session (ทฤษฎี : Workshop)
 
@@ -100,10 +100,10 @@
 | S2 | 15′ | 65′ (25′ + 20′ + 20′) → ลดสาธิต WS2.3 เหลือ 15′ ได้ | — |
 | S3 | 15′ | 75′ (WS3.1 15′ + WS3.2 15′ + WS3.3 45′) | — (Template/Label/Board เตรียมไว้ก่อน ผู้เรียนแค่ตรวจและปรับ) |
 | S4 | 10′ | 95′ (WS4.1 20′ + WS4.2 สาธิต 5′ + WS4.3 15′ + WS4.5 20′ + WS4.6 20′ + WS4.4 15′) | — (ตามกำหนดการ SAGE 14:45–16:30 = 105′) |
-| S5 | 25′ (ReAct 10′ + Multi-agent/Memory hub 15′ — "Agent คืออะไร" และ "Plan/Act" ย้ายไปสอนก่อน WS1.3 แล้ว) | 50′ (5′ + 10′ + 15′ + 20′) | — (ให้ TA pre-pull Docker image ตอนลงทะเบียน) |
-| S6 | 10′ | 75′ (25′ + 10′ + 40′) | — |
-| S7 | 10′ | 80′ (35′ + 20′ + 25′) | — |
-| S8 | 12′ (ความปลอดภัย/ธรรมาภิบาล) | 55′ (15′ + 20′ + 12′ + 8′) | 8′ Q&A + วุฒิบัตร |
+| S5 | สอนแทรกใน Kickoff/ออกแบบ (ReAct · Multi-agent · Memory hub · Spec/Handoff ~15′) | 90′ (WS5.1 20′ + 5.2 45′ + 5.3 15′ + 5.4 10′) | Design Gate คือ checkpoint |
+| S6 | 5′ (builder: อ่าน diff ก่อน Save) | 70′ (WS6.1) | handoff ก่อนพักเที่ยง |
+| S7 | — | 90′ (WS7.1) | — |
+| S8 | ~10′ (รีวิว · AI bot · ความปลอดภัย — สอนก่อน WS8.1) | 105′ (WS8.1 45′ + 8.2 30′ + 8.3 30′) | Q&A + วุฒิบัตรหลัง Demo |
 
 > เวลาของแต่ละ Workshop รวมเวลาที่ผู้สอนอธิบายสั้น ๆ ก่อนเริ่ม ถ้าเวลาไม่พอ ดูแผนตัดงานใน **คู่มือผู้สอน → ภาคผนวก ค**
 

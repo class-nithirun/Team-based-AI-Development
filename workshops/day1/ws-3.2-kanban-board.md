@@ -22,9 +22,9 @@
 ### ขั้นที่ 1 — สร้าง Project
 
 1. เปิด repo ของทีม → แท็บ **Projects** → **New project**
-2. เลือกแม่แบบ **Board** → ตั้งชื่อ `DMS Board — ทีม <N>` → **Create**
+2. เลือกแม่แบบ **Board** → ตั้งชื่อ `Practice Board — ทีม <N>` → **Create**
 
-> GitHub Projects ใช้ได้ทั้งระดับ repo และระดับ Organization — โครงการข้ามทีมแนะนำระดับ Organization (ผู้สอนจะสาธิตกับ `dms-central` ใน Day 2)
+> GitHub Projects ใช้ได้ทั้งระดับ repo และระดับ Organization — โครงการข้ามทีมแนะนำระดับ Organization (เหมาะกับโครงการข้ามหน่วยงานจริงหลังอบรม)
 
 ### ขั้นที่ 2 — ตั้งค่า Status 5 ค่า
 
@@ -111,6 +111,6 @@
 
 - เมนูของ GitHub Projects ปรับบ่อย ให้ผู้สอนสาธิตจากหน้าจอจริงก่อนและแก้คำศัพท์ในเอกสารนี้ให้ตรงกับที่เห็น
 - ย้ำว่า **Board มีไว้ให้ทีมเห็นสถานะ ไม่ใช่ไว้รายงานเจ้านาย** — ถ้าไม่มีใครอัปเดต Board ก็ไม่มีประโยชน์
-- Day 2 ใช้ Board ของ `dms-central` (ผู้สอนตั้งไว้แล้ว) — แต่ละทีมหยิบการ์ดจาก Board นั้น
+- Day 2 ไม่ใช้ Board — แต่ละกลุ่มทำงานจาก Design Doc และ spec ของการ์ดใน ubu-biolink (ดู WS5.2–5.3)
 
 **ต่อไป →** [WS3.3 Sprint Planning จำลอง](ws-3.3-sprint-planning.md)

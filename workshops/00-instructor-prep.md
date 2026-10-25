@@ -5,13 +5,13 @@
 
 ## A. GitHub Organization (ใช้กับ Day 2 — Day 1 ไม่ต้องใช้ Org)
 
-> Day 1 ผู้เรียนใช้บัญชีส่วนตัว: Module Lead สร้าง repo ทีมจาก Template เองใน WS1.2 (หัวข้อ B) — ตาราง A จึงเป็นของ Day 2 (`dms-central` / BioLink)
+> Day 1 ผู้เรียนใช้บัญชีส่วนตัว: Module Lead สร้าง repo ทีมจาก Template เองใน WS1.2 (หัวข้อ B) — ตาราง A จึงเป็นของ Day 2 (ubu-biolink — ใช้เมื่อย้าย repo ไป Organization)
 
 | ☐ | งาน | รายละเอียด |
 |---|---|---|
 | ☐ | Organization `ubu-central-dev-2569` | เปิด 2FA บังคับสำหรับสมาชิก (Settings → Authentication security) |
 | ☐ | Team `maintainers` | ผู้สอน + ผู้ดูแลระบบของมหาวิทยาลัยที่ตัดสินใจ merge / อนุมัติ deploy |
-| ☐ | Team `participants` | ผู้เรียนทั้งหมด — สิทธิ์ **Write** ใน `dms-central` |
+| ☐ | Team `participants` | ผู้เรียนทั้งหมด — สิทธิ์ **Write** ใน `ubu-biolink` (ถ้าย้ายไป Organization) |
 | ☐ | Team ย่อย `team-1` … `team-5` | แต่ละทีมผูกกับโมดูล (ใช้ใน `CODEOWNERS`) |
 | ☐ | เชิญผู้เรียนจาก GitHub username ในแบบสำรวจ | ส่งคำเชิญล่วงหน้า 2–3 วัน และเตือนให้กด Accept |
 | ☐ | Actions permissions | อนุญาต Actions ของ GitHub (`actions/*`); Workflow permissions: **Read and write** ถ้า Bot ต้อง comment (หรือกำหนด `pull-requests: write` ใน workflow) |
@@ -34,39 +34,32 @@
 
 ## C. `ubu-biolink` สำหรับ Day 2
 
-> Day 2 ใช้ ubu-biolink branch `instructor/revamp-workshop-base` (Postgres, 5 กลุ่ม × 4 โมดูล) — ชุดไฟล์อยู่ที่ [`day2-kit-biolink/`](../day2-kit-biolink/README-KIT.md) ใน repo นี้ · ไฟล์ WS ของ Day 2 บางไฟล์ยังเขียนตาม DMS เดิม
+> Day 2 ใช้ ubu-biolink branch **`instructor/revamp-workshop-base`** (4 กลุ่ม × 4 โมดูล, Postgres) ซึ่งมีชุดไฟล์ AI และคู่มือของวันครบแล้ว
+> รายการเตรียมฉบับเต็มอยู่ใน `docs/workshop/README.md` หัวข้อ H ของ repo นั้น — ตารางนี้สรุปเฉพาะที่ต้องทำก่อน 29 ต.ค.
 
 | ☐ | งาน | รายละเอียด |
 |---|---|---|
-| ☐ | ติดตั้ง **day2-kit-biolink** ผ่าน 2 PR | PR 1: `AGENTS.md`, `docs/memory/`, `docs/specs/_TEMPLATE.md`, `docs/handoff/_TEMPLATE.md`, `.clinerules/workflows/`, `.kilo/agents/` (ไม่กระทบระบบ) · PR 2: `.github/CODEOWNERS`, `.github/ai-review/`, `ai-review.yml`, `scripts/ai-review.mjs` — ขั้นตอนใน [`README-KIT.md`](../day2-kit-biolink/README-KIT.md) |
-| ☐ | Ruleset ป้องกัน `main` | Require PR (1 approval) + Require Code Owners + Required checks `CI / api`, `CI / web` + Block force push — **BioLink เป็น private ของบัญชี Free ใช้ Ruleset ไม่ได้** ดูหัวข้อ H |
-| ☐ | Variables / Secret ของ AI Review bot | `LLM_BASE_URL`, `LLM_MODEL` (Variables) และ `LLM_API_KEY` (Secret ใช้ `gh secret set`) + label `ai-review` — ทดสอบด้วย PR ที่ผิดโดยตั้งใจ (บทที่ 3–4 ของคู่มือจับมือทำ) |
-| ☐ | Board `DMS Board` ของ `dms-central` | 5 คอลัมน์เหมือน Day 1 + Fields Module / Priority / Size |
-| ☐ | Backlog เริ่มต้นของ 5 โมดูล | โมดูลละ ≥ 3 การ์ดขนาดเล็ก (ทีมจะเติมเองใน WS4.4 อีก ≥ 5) ติด label `module: …` |
-| ☐ | Issue ซ้อม stats endpoint | การ์ดสำรองที่ทุกคนทำได้ถ้าการ์ดของทีมยังไม่พร้อม (ดูบทที่ 5 คู่มือจับมือทำ) |
-| ☐ | `CODEOWNERS` ใส่ชื่อจริง | แทน `@INSTRUCTOR` ด้วย username ผู้สอน และเปิดบรรทัด `/apps/api/src/features/<ชื่อ>/` ของแต่ละกลุ่มเมื่อรู้ชื่อโฟลเดอร์ |
+| ☐ | **ย้ายเฉลยออกก่อนเชิญผู้เรียน** | ผู้เรียนที่เป็น Collaborator เปิดดูได้ทุก branch — ย้าย branch `instructor/solution` และโฟลเดอร์ `instructor-only/` ไปไว้ใน repo แยก (private) ก่อนส่งคำเชิญ |
+| ☐ | รวมชุดไฟล์เข้า `main` ก่อนแตก branch กลุ่ม | `AGENTS.md`, `.kilo/`, `.clinerules/`, `docs/memory·specs·handoff·workshop`, `.github/`, `scripts/` — workflow ของ AI Review bot ต้องอยู่ใน base branch ของ PR |
+| ☐ | เตรียม skeleton 16 โมดูล | stub ทุกโมดูล, `lib/features.js`, `features/<กลุ่ม>/index.js`, `docs/api/group-N.md` ตาม `docs/features.md` §4.1 |
+| ☐ | สร้าง branch กลุ่ม | `feature/academic` · `feature/teaching` · `feature/services` · `feature/community` จาก `main` แล้ว push |
+| ☐ | AI Review bot | Secret `ANTHROPIC_API_KEY` (ไม่ตั้งก็ได้ — bot ยังตรวจกติกาแบบตายตัว) · Variables `AI_REVIEW_INSTRUCTORS` (login ผู้สอน) และ `AI_REVIEW_MODEL` ถ้าไม่ใช้ค่าเริ่มต้น |
+| ☐ | `CODEOWNERS` | เปลี่ยนชื่อผู้สอน แล้วปลดคอมเมนต์บรรทัดกลุ่มคู่ (G1↔G2, G3↔G4) หลังรู้ username ผู้เรียน |
+| ☐ | Branch protection / Ruleset ของ `main` | PR + CI (`CI / api`, `CI / web`) + code owner review — **ubu-biolink เป็น private ของบัญชีฟรี ใช้ Ruleset ไม่ได้** ดูหัวข้อ H |
+| ☐ | เชิญผู้เรียนเป็น Collaborator | จาก username ที่ได้ใน WS4.4 (สิทธิ์ Write) |
+| ☐ | ซ้อม "ตรวจ 4 ข้อ" | บนเครื่องที่ใช้สอน 1 รอบ — ยืนยันว่า agent ปฏิเสธจริงในเวอร์ชัน Kilo ที่ใช้ |
+| ☐ | ซ้อมสาธิต Expertise | ตาม `instructor-only/demo/README.md` (Design Doc → Prompt → Build → Review) |
 
-## D. สภาพแวดล้อมสำหรับ Deploy (WS8.2)
+## D. Deploy วันที่ 2
 
-ตัวอย่างนี้สมมติว่า Deploy ด้วย **SSH + Docker Compose** ปรับให้ตรงกับเซิร์ฟเวอร์จริงของมหาวิทยาลัย
-
-| ☐ | งาน | รายละเอียด |
-|---|---|---|
-| ☐ | เซิร์ฟเวอร์ (VM) พร้อม Docker | ติดตั้ง Docker + Compose, เปิดพอร์ตที่ใช้, ผู้ใช้ `deploy` ที่ไม่ใช่ root |
-| ☐ | โฟลเดอร์ `/opt/dms` | clone `dms-central` ไว้ (read-only deploy key) และมี `deploy.sh <tag>` |
-| ☐ | SSH key เฉพาะ deploy | สร้างคู่กุญแจใหม่ (`ssh-keygen -t ed25519`) ใส่ public key ที่เซิร์ฟเวอร์ — private key เก็บเป็น **Environment secret** `DEPLOY_SSH_KEY` |
-| ☐ | Environment `production` | Required reviewers = `maintainers`, ติ๊ก Prevent self-review, จำกัดให้ deploy เฉพาะ tag ที่ตรง `v*` |
-| ☐ | Variables | `DEPLOY_HOST`, `DEPLOY_USER` |
-| ☐ | Workflow `deploy.yml` + `scripts/deploy-ssh.sh` | ใน `main` ของ `dms-central` — ทดสอบด้วย tag ทดลอง (เช่น `v0.0.0-test`) ก่อนวันจริง |
-| ☐ | Tag baseline สำหรับ rollback | สร้าง tag เสถียร (เช่น `v0.0.0-baseline`) ใน `dms-central` และตรวจว่า deploy tag นี้ได้ |
-| ☐ | Endpoint ตรวจสุขภาพ | `/health` หรือ endpoint ที่มีอยู่ สำหรับ smoke test (ถ้า Starter ยังไม่มี ให้เพิ่มเป็นการ์ดเล็ก) |
-| ☐ | แผนสำรอง | ถ้าเซิร์ฟเวอร์ไม่พร้อม ใช้ `docker compose` บนเครื่องผู้สอนเป็นเป้าหมาย deploy จำลอง |
+ไม่มีในวันที่ 2 แล้ว — branch `instructor/revamp-workshop-base` จบวันด้วย Demo บนเครื่อง (สไลด์ Release/Deploy ของวันที่ 2 ถูกซ่อนไว้ท้ายชุด)
+การ Deploy สอนในวันที่ 1 แล้ว (WS4.5 Docker · WS4.6 PM2 ด้วย `practice-app`)
 
 ## E. API Key และ AI
 
 | ☐ | งาน |
 |---|---|
-| ☐ | ได้ API Key ของมหาวิทยาลัยพอสำหรับผู้เรียน + TA + Bot (Key ของ Bot **แยกต่างหาก**) |
+| ☐ | ได้ API Key ของมหาวิทยาลัยพอสำหรับผู้เรียน + TA (Kilo Code / Cline) และ `ANTHROPIC_API_KEY` แยกสำหรับ AI Review bot |
 | ☐ | ตัดสินใจ Model: ผู้เรียนใช้ตัวหนึ่ง Bot ใช้อีกตัว (มุมมองต่างกัน) |
 | ☐ | ตั้งงบ/rate limit ต่อ Key และเตรียมวิธี Revoke อย่างรวดเร็ว |
 | ☐ | ทดสอบ Key ด้วย `curl` ก่อนแจก (ดูคู่มือผู้สอนฉบับเดิม ภาคผนวก F-1) |
@@ -76,9 +69,9 @@
 
 | ☐ | งาน |
 |---|---|
-| ☐ | จัดทีม (5 ทีม) จากแบบสำรวจความคุ้นเคย — ทีมละ 4–6 คน ผสมทักษะ และกำหนดโมดูลของแต่ละทีม |
+| ☐ | จัดทีม: Day 1 ทีมละ 4–6 คน · Day 2 **4 กลุ่ม** กลุ่มละ 4–5 คน (เจ้าของโมดูล A–D + ผู้ประสาน/QA ถ้ามีคนที่ 5) |
 | ☐ | ส่งคู่มือติดตั้งล่วงหน้า (VS Code, Git, Node.js 24 LTS, Docker Desktop, GitHub CLI, Cline, Kilo Code) |
-| ☐ | TA ทุกคนผ่านการซ้อม: บทที่ 6 (ซ้อมครบวงจร) + บทที่ 7 (ทดสอบรั้ว G1–G7) ของคู่มือจับมือทำ |
+| ☐ | TA ทุกคนซ้อมวงจร 1 โมดูลบน ubu-biolink (Design → Build → Review) และ "ตรวจ 4 ข้อ" ของ agent |
 | ☐ | ตรวจเครือข่ายห้อง: เข้าถึง GitHub, Docker Hub / ghcr.io, npm และ API ของ AI ได้ |
 | ☐ | ติดตั้งเครื่องมือล่วงหน้าบนเครื่องสำรอง 2–3 เครื่อง สำหรับผู้เรียนที่ติดตั้งไม่ผ่าน |
 | ☐ | USB / โฟลเดอร์แชร์ติดตั้งออฟไลน์: ตัวติดตั้ง VS Code, Git, Node.js, Docker Desktop, VSIX ของ Cline/Kilo |
@@ -87,10 +80,9 @@
 
 ## G. วันก่อนอบรม (D-1)
 
-- ☐ เปิด `ubu-biolink` แล้วตรวจ: `AGENTS.md` อยู่ชั้นบนสุด, Agent `designer` / `reviewer` ขึ้นใน Kilo, Workflow `/design.md` `/build.md` `/review.md` `/check-before-pr.md` ขึ้นใน Cline (เช็กลิสต์ท้าย README-KIT.md)
+- ☐ เปิด `ubu-biolink` branch กลุ่มแล้วตรวจ: agent `designer` · `builder` · `reviewer` ขึ้นใน Kilo และ workflow `/design.md` `/build.md` `/review.md` ใช้ได้
 - ☐ เปิด PR ทดสอบ 1 ใบ ให้ AI Review bot คอมเมนต์ได้ภายใน 2 นาที
-- ☐ ทดสอบ deploy ด้วย tag ทดลองจนครบวงจรและ rollback ได้
-- ☐ ตรวจให้ทุก Team ใน Org มีสมาชิกถูกต้อง และได้รับสิทธิ์ใน `dms-central`
+- ☐ ตรวจว่า `instructor/solution` และ `instructor-only/` ไม่อยู่ใน repo ที่ผู้เรียนเข้าถึงได้ และผู้เรียนทุกคน Accept คำเชิญแล้ว
 - ☐ สำรองสไลด์เป็น PDF และคัดลอก Workshop pack ไว้ในเครื่องผู้สอน (กัน Wi-Fi ล่ม)
 
 ## H. แพ็กเกจ GitHub (สำคัญ — กระทบ WS2.3, WS4.1, WS8.2)
