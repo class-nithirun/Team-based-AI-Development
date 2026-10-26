@@ -3,6 +3,8 @@
 แอปเล็กที่สุดที่ยังเดินครบลูปของทีมได้: **Issue → Feature Branch → AI Coding → PR → CI → Merge → Release → Deploy (Docker / PM2)**
 ใช้ stack เดียวกับ backend ของ UBU BioLink (Node.js 20 + Express) และแบ่งงานเป็น **8 ฟีเจอร์ = 8 Feature Branch** แบบเดียวกับวันที่ 2
 
+> 📘 **เอกสาร Workshop ทั้ง 2 วันอยู่ที่ [workshops/README.md](../workshops/README.md)** — เปิดไฟล์ของงานที่กำลังทำคู่กับสไลด์ · `workshops/day1/solutions/` คือเฉลยของผู้สอน ให้ทำเองก่อน
+
 ```
 Browser ──► public/index.html + app.js ──fetch /api/*──► Express (src/app.js) ──► store (memory หรือไฟล์ JSON)
                  └─ public/features/<ฟีเจอร์>.js            └─ src/features/<ฟีเจอร์>.js

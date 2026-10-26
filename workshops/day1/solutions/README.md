@@ -1,6 +1,6 @@
 # เฉลยฟีเจอร์ Day 1 (สำหรับผู้สอน/TA เท่านั้น)
 
-> ⚠️ **ห้ามคัดลอกโฟลเดอร์นี้เข้า Template repo หรือแจกผู้เรียน** — ใช้ตอนซ้อม (Dry Run) และช่วยทีมที่ติดเกิน 10 นาที
+> ⚠️ **โฟลเดอร์นี้มากับ repo ทีม (ผ่าน Template) — ให้ผู้เรียนทำเองก่อน** ผู้สอน/TA เดินดูและใช้เฉลยช่วยทีมที่ติดเกิน 10 นาที
 
 แต่ละโฟลเดอร์มีโครงสร้างเหมือนราก practice-app — วางทับแล้วใช้ได้ทันที:
 
@@ -19,7 +19,7 @@ cp -r workshops/day1/solutions/pin/. <repo-ทีม>/     # วางเฉล�
 | `export/` | `src/features/export.js` · `public/features/export.js` · `test/export.test.js` | 3 |
 | `theme/` | `public/features/theme.js` · `test/theme.test.js` | 1 |
 
-ตรวจแล้ว (21 ต.ค. 2569): วางเฉลยทีละฟีเจอร์ → `lint` + `test` ผ่านทุกตัว และวางครบ 8 ฟีเจอร์พร้อมกัน → 26 tests ผ่าน หน้าเว็บทำงานครบ ไม่มี error ใน console และคำสั่ง Acceptance Criteria ทั้ง 34 ข้อใน `practice-app/docs/specs/` ผ่านกับเฉลย (เปิด server ใหม่ต่อ spec)
+ตรวจแล้ว (21 ต.ค. 2569): วางเฉลยทีละฟีเจอร์ → `lint` + `test` ผ่านทุกตัว และวางครบ 8 ฟีเจอร์พร้อมกัน → 25 tests ผ่าน (ตรวจซ้ำ 26 ต.ค. หลังจำกัด `npm test` ให้รันเฉพาะ `test/*.test.js` — เฉลยในโฟลเดอร์นี้จึงไม่ถูกรันปนเมื่ออยู่ใน repo ทีม) หน้าเว็บทำงานครบ ไม่มี error ใน console และคำสั่ง Acceptance Criteria ทั้ง 34 ข้อใน `practice-app/docs/specs/` ผ่านกับเฉลย (เปิด server ใหม่ต่อ spec)
 
 ## ใช้ช่วยทีมที่ติดอย่างไร
 

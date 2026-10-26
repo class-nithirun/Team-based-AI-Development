@@ -1,4 +1,4 @@
-# Workshop Pack — Team-based AI Development (27–28 ต.ค. 2569)
+# Workshop Pack — Team-based AI Development (28–29 ต.ค. 2569)
 
 ชุดเอกสาร Workshop ย่อยของหลักสูตร 2 วัน แยกเป็นไฟล์ละ 1 งาน ใช้คู่กับ
 [สไลด์สอน](../slides/Team-based_AI_Development_Slides.pptx) และ
@@ -64,8 +64,6 @@
 | S3 (13:00–14:30) | WS3.1 | Issue Template และ Label ของทีม | 15′ | หน้า 102–108 | [ws-3.1-issue-templates-labels.md](day1/ws-3.1-issue-templates-labels.md) |
 | | WS3.2 | สร้าง Kanban Board ของทีม | 15′ | หน้า 109–115 | [ws-3.2-kanban-board.md](day1/ws-3.2-kanban-board.md) |
 | | WS3.3 | Sprint: 8 ฟีเจอร์ = 8 Feature Branch (ทำด้วย AI) | 45′ | หน้า 120–129 | [ws-3.3-sprint-planning.md](day1/ws-3.3-sprint-planning.md) |
-
-> ฟีเจอร์ A–H ของ practice-app: ภาพรวม การเตรียม และแผนซ้อมของทีมผู้สอนอยู่ที่ [day1/features-backlog.md](day1/features-backlog.md) · การ์ด [day1/feature-cards/](day1/feature-cards/) · เฉลย TA [day1/solutions/](day1/solutions/README.md)
 | S4 (14:45–16:00) | WS4.1 | สร้าง CI และตั้ง Required Check | 20′ | หน้า 140–147 | [ws-4.1-ci-required-check.md](day1/ws-4.1-ci-required-check.md) |
 | | WS4.2 | Dependabot และ Security scanning | 10′ | หน้า 148–150 | [ws-4.2-dependabot-security.md](day1/ws-4.2-dependabot-security.md) |
 | | WS4.3 | Release v0.0.1 | 15′ | หน้า 151–157 | [ws-4.3-release-v0.0.1.md](day1/ws-4.3-release-v0.0.1.md) |
@@ -74,6 +72,7 @@
 | | WS4.4 | จัดทีมและเขียน Working Agreement (งานสุดท้ายของวัน) | 15′ | หน้า 166 | [ws-4.4-team-setup.md](day1/ws-4.4-team-setup.md) |
 
 > ลำดับใน Session 4: WS4.1 → 4.2 → 4.3 → **4.5 → 4.6** → 4.4 — แอปที่ใช้ Deploy คือ [`practice-app/`](../practice-app/README.md)
+> ฟีเจอร์ A–H ของ practice-app: ภาพรวม การเตรียม และแผนซ้อมของทีมผู้สอนอยู่ที่ [day1/features-backlog.md](day1/features-backlog.md) · การ์ด [day1/feature-cards/](day1/feature-cards/) · เฉลย TA [day1/solutions/](day1/solutions/README.md)
 
 ### Day 2 — Multi-agent Vibe Coding บน UBU BioLink (4 กลุ่ม × 4 โมดูล)
 
