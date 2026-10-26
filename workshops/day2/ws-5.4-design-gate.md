@@ -5,7 +5,7 @@
 | **ตำแหน่ง** | Day 2 · Session 5 |
 | **เวลา** | 10 นาที (10:20–10:30) |
 | **รูปแบบ** | กลุ่ม + ผู้สอน |
-| **สไลด์** | หน้า 191, 195 (UBU SAGE Camp v2) |
+| **สไลด์** | หน้า 192, 196 (UBU SAGE Camp v2) |
 | **ผลลัพธ์** | ตรา ✅ ของกลุ่ม และ spec ทุกการ์ดเปลี่ยนเป็น `สถานะ: Approved` |
 
 > ทำใน repo `ubu-biolink` branch กลุ่มที่แตกจาก `instructor/revamp-workshop-base` — รายละเอียดเต็มอยู่ใน `docs/workshop/README.md` ของ repo นั้น

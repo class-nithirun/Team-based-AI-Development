@@ -5,7 +5,7 @@
 | **ตำแหน่ง** | Day 2 · Session 8 |
 | **เวลา** | 30 นาที (15:30–16:00) |
 | **รูปแบบ** | ผู้ประสานกลุ่ม (สมาชิกช่วยตรวจ) |
-| **สไลด์** | หน้า 214–215 (UBU SAGE Camp v2) |
+| **สไลด์** | หน้า 215–216 (UBU SAGE Camp v2) |
 | **ผลลัพธ์** | งานทั้ง 4 กลุ่มอยู่ใน `main` · CI เขียว · inbox ของทุกกลุ่มอยู่ใน `main` |
 
 > ทำใน repo `ubu-biolink` branch กลุ่มที่แตกจาก `instructor/revamp-workshop-base` — รายละเอียดเต็มอยู่ใน `docs/workshop/README.md` ของ repo นั้น

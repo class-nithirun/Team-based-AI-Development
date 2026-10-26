@@ -5,7 +5,7 @@
 | **ตำแหน่ง** | Day 2 · Session 8 |
 | **เวลา** | 45 นาที (14:45–15:30) |
 | **รูปแบบ** | คู่ในกลุ่ม → คู่ข้ามกลุ่ม → AI |
-| **สไลด์** | หน้า 205–213 (UBU SAGE Camp v2) |
+| **สไลด์** | หน้า 206–214 (UBU SAGE Camp v2) |
 | **ผลลัพธ์** | ทุก PR มีคอมเมนต์ชั้น 1–2 ไม่เหลือ 🔴 และ handoff บันทึกผลรีวิว |
 
 > ทำใน repo `ubu-biolink` branch กลุ่มที่แตกจาก `instructor/revamp-workshop-base` — รายละเอียดเต็มอยู่ใน `docs/workshop/README.md` ของ repo นั้น

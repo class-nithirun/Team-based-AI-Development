@@ -61,36 +61,36 @@
 | S2 (10:45–12:00) | WS2.1 | GitHub Flow รอบแรก: PR + Review | 25′ | หน้า 49–67 | [ws-2.1-pr-review.md](day1/ws-2.1-pr-review.md) |
 | | WS2.2 | จำลอง Merge Conflict และแก้ร่วมกัน | 20′ | หน้า 70–77 | [ws-2.2-merge-conflict.md](day1/ws-2.2-merge-conflict.md) |
 | | WS2.3 | ตั้ง Ruleset, CODEOWNERS และกันความลับ | 20′ | หน้า 81–90 | [ws-2.3-repo-rules-secrets.md](day1/ws-2.3-repo-rules-secrets.md) |
-| S3 (13:00–14:30) | WS3.1 | Issue Template และ Label ของทีม | 15′ | หน้า 101–107 | [ws-3.1-issue-templates-labels.md](day1/ws-3.1-issue-templates-labels.md) |
-| | WS3.2 | สร้าง Kanban Board ของทีม | 15′ | หน้า 108–114 | [ws-3.2-kanban-board.md](day1/ws-3.2-kanban-board.md) |
-| | WS3.3 | Sprint: 8 ฟีเจอร์ = 8 Feature Branch (ทำด้วย AI) | 45′ | หน้า 119–128 | [ws-3.3-sprint-planning.md](day1/ws-3.3-sprint-planning.md) |
+| S3 (13:00–14:30) | WS3.1 | Issue Template และ Label ของทีม | 15′ | หน้า 102–108 | [ws-3.1-issue-templates-labels.md](day1/ws-3.1-issue-templates-labels.md) |
+| | WS3.2 | สร้าง Kanban Board ของทีม | 15′ | หน้า 109–115 | [ws-3.2-kanban-board.md](day1/ws-3.2-kanban-board.md) |
+| | WS3.3 | Sprint: 8 ฟีเจอร์ = 8 Feature Branch (ทำด้วย AI) | 45′ | หน้า 120–129 | [ws-3.3-sprint-planning.md](day1/ws-3.3-sprint-planning.md) |
 
 > ฟีเจอร์ A–H ของ practice-app: ภาพรวม การเตรียม และแผนซ้อมของทีมผู้สอนอยู่ที่ [day1/features-backlog.md](day1/features-backlog.md) · การ์ด [day1/feature-cards/](day1/feature-cards/) · เฉลย TA [day1/solutions/](day1/solutions/README.md)
-| S4 (14:45–16:00) | WS4.1 | สร้าง CI และตั้ง Required Check | 20′ | หน้า 139–146 | [ws-4.1-ci-required-check.md](day1/ws-4.1-ci-required-check.md) |
-| | WS4.2 | Dependabot และ Security scanning | 10′ | หน้า 147–149 | [ws-4.2-dependabot-security.md](day1/ws-4.2-dependabot-security.md) |
-| | WS4.3 | Release v0.0.1 | 15′ | หน้า 150–156 | [ws-4.3-release-v0.0.1.md](day1/ws-4.3-release-v0.0.1.md) |
-| | WS4.5 | Deploy ด้วย Docker | 20′ | หน้า 159–160 | [ws-4.5-deploy-docker.md](day1/ws-4.5-deploy-docker.md) |
-| | WS4.6 | Deploy ด้วย PM2 | 20′ | หน้า 161–162 | [ws-4.6-deploy-pm2.md](day1/ws-4.6-deploy-pm2.md) |
-| | WS4.4 | จัดทีมและเขียน Working Agreement (งานสุดท้ายของวัน) | 15′ | หน้า 165 | [ws-4.4-team-setup.md](day1/ws-4.4-team-setup.md) |
+| S4 (14:45–16:00) | WS4.1 | สร้าง CI และตั้ง Required Check | 20′ | หน้า 140–147 | [ws-4.1-ci-required-check.md](day1/ws-4.1-ci-required-check.md) |
+| | WS4.2 | Dependabot และ Security scanning | 10′ | หน้า 148–150 | [ws-4.2-dependabot-security.md](day1/ws-4.2-dependabot-security.md) |
+| | WS4.3 | Release v0.0.1 | 15′ | หน้า 151–157 | [ws-4.3-release-v0.0.1.md](day1/ws-4.3-release-v0.0.1.md) |
+| | WS4.5 | Deploy ด้วย Docker | 20′ | หน้า 160–161 | [ws-4.5-deploy-docker.md](day1/ws-4.5-deploy-docker.md) |
+| | WS4.6 | Deploy ด้วย PM2 | 20′ | หน้า 162–163 | [ws-4.6-deploy-pm2.md](day1/ws-4.6-deploy-pm2.md) |
+| | WS4.4 | จัดทีมและเขียน Working Agreement (งานสุดท้ายของวัน) | 15′ | หน้า 166 | [ws-4.4-team-setup.md](day1/ws-4.4-team-setup.md) |
 
 > ลำดับใน Session 4: WS4.1 → 4.2 → 4.3 → **4.5 → 4.6** → 4.4 — แอปที่ใช้ Deploy คือ [`practice-app/`](../practice-app/README.md)
 
 ### Day 2 — Multi-agent Vibe Coding บน UBU BioLink (4 กลุ่ม × 4 โมดูล)
 
-> **ทั้งวันทำตาม Loop ของ 1 การ์ด** (สไลด์หน้า 169 · [loop-1-card.md](day2/loop-1-card.md) · ใบพิมพ์ A4 [loop-1-card.pdf](day2/loop-1-card.pdf)) — 1 การ์ด = 1 Issue = 1 branch = 1 spec = 1 PR
+> **ทั้งวันทำตาม Loop ของ 1 การ์ด** (สไลด์หน้า 170 · [loop-1-card.md](day2/loop-1-card.md) · ใบพิมพ์ A4 [loop-1-card.pdf](day2/loop-1-card.pdf)) — 1 การ์ด = 1 Issue = 1 branch = 1 spec = 1 PR
 > การ์ด 20 ใบ (4 Design Doc + 16 โมดูล) อยู่ที่ [day2/cards/](day2/cards/) · ผู้สอนสร้างเป็น Issue + Board ด้วย `scripts/seed-day2-cards.sh` (ดู [00-instructor-prep.md](00-instructor-prep.md) หัวข้อ C)
 
 | Session | ID | งาน | เวลา | สไลด์ | ไฟล์ |
 |---|---|---|---|---|---|
-| S5 (09:00–10:30) | WS5.1 | Kickoff: รันระบบ + ตรวจว่า agent ล็อกสิทธิ์จริง | 20′ | หน้า 186–187 | [ws-5.1-kickoff.md](day2/ws-5.1-kickoff.md) |
-| | WS5.2 | ระดมสมอง + Design Doc ของกลุ่ม | 45′ | หน้า 188–193 | [ws-5.2-design-doc.md](day2/ws-5.2-design-doc.md) |
-| | WS5.3 | Spec ของการ์ด + SELF_CHECK | 15′ | หน้า 194 | [ws-5.3-card-spec.md](day2/ws-5.3-card-spec.md) |
-| | WS5.4 | Design Gate | 10′ | หน้า 191, 195 | [ws-5.4-design-gate.md](day2/ws-5.4-design-gate.md) |
-| S6 (10:45–12:00) | WS6.1 | Vibecode รอบ 1: DB + API | 75′ | หน้า 198–201 | [ws-6.1-vibecode-api.md](day2/ws-6.1-vibecode-api.md) |
-| S7 (13:00–14:30) | WS7.1 | Vibecode รอบ 2: หน้าจอ + เทสต์ + PR | 90′ | หน้า 202–204 | [ws-7.1-vibecode-ui-tests.md](day2/ws-7.1-vibecode-ui-tests.md) |
-| S8 (14:45–16:30) | WS8.1 | รีวิวโค้ด 3 ชั้น | 45′ | หน้า 205–213 | [ws-8.1-code-review.md](day2/ws-8.1-code-review.md) |
-| | WS8.2 | รวมเข้า main + Memory inbox | 30′ | หน้า 214–215 | [ws-8.2-merge-main.md](day2/ws-8.2-merge-main.md) |
-| | WS8.3 | Demo บนหน้าเดียว | 30′ | หน้า 216 | [ws-8.3-demo.md](day2/ws-8.3-demo.md) |
+| S5 (09:00–10:30) | WS5.1 | Kickoff: รันระบบ + ตรวจว่า agent ล็อกสิทธิ์จริง | 20′ | หน้า 187–188 | [ws-5.1-kickoff.md](day2/ws-5.1-kickoff.md) |
+| | WS5.2 | ระดมสมอง + Design Doc ของกลุ่ม | 45′ | หน้า 189–194 | [ws-5.2-design-doc.md](day2/ws-5.2-design-doc.md) |
+| | WS5.3 | Spec ของการ์ด + SELF_CHECK | 15′ | หน้า 195 | [ws-5.3-card-spec.md](day2/ws-5.3-card-spec.md) |
+| | WS5.4 | Design Gate | 10′ | หน้า 192, 196 | [ws-5.4-design-gate.md](day2/ws-5.4-design-gate.md) |
+| S6 (10:45–12:00) | WS6.1 | Vibecode รอบ 1: DB + API | 75′ | หน้า 199–202 | [ws-6.1-vibecode-api.md](day2/ws-6.1-vibecode-api.md) |
+| S7 (13:00–14:30) | WS7.1 | Vibecode รอบ 2: หน้าจอ + เทสต์ + PR | 90′ | หน้า 203–205 | [ws-7.1-vibecode-ui-tests.md](day2/ws-7.1-vibecode-ui-tests.md) |
+| S8 (14:45–16:30) | WS8.1 | รีวิวโค้ด 3 ชั้น | 45′ | หน้า 206–214 | [ws-8.1-code-review.md](day2/ws-8.1-code-review.md) |
+| | WS8.2 | รวมเข้า main + Memory inbox | 30′ | หน้า 215–216 | [ws-8.2-merge-main.md](day2/ws-8.2-merge-main.md) |
+| | WS8.3 | Demo บนหน้าเดียว | 30′ | หน้า 217 | [ws-8.3-demo.md](day2/ws-8.3-demo.md) |
 
 > ตารางนี้คือตาราง "Workshop 1 วัน" ใน `docs/workshop/README.md` ของ ubu-biolink ที่ใส่ช่วงพักตามกำหนดการ SAGE (10:30–10:45 และ 14:30–14:45)
 > จึงเหลือเวลา Vibecode รอบ 1 และรีวิวน้อยกว่าตารางใน repo ช่วงละ 15 นาที · สไลด์ REA, Release/Deploy ของวันที่ 2 ถูกซ่อนไว้ท้ายชุด (ไม่อยู่ใน flow ของ branch)
