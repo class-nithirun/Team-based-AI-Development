@@ -5,7 +5,7 @@
 | **ตำแหน่ง** | Day 2 · Session 8 |
 | **เวลา** | 30 นาที (16:00–16:30) |
 | **รูปแบบ** | ทุกกลุ่ม |
-| **สไลด์** | หน้า 212 (UBU SAGE Camp v2) |
+| **สไลด์** | หน้า 215 (UBU SAGE Camp v2) |
 | **ผลลัพธ์** | เล่าเรื่องเดียวบน `/u/kamon.j` ให้เห็นงานของทุกกลุ่ม |
 
 > ทำใน repo `ubu-biolink` branch กลุ่มที่แตกจาก `instructor/revamp-workshop-base` — รายละเอียดเต็มอยู่ใน `docs/workshop/README.md` ของ repo นั้น
