@@ -27,7 +27,7 @@
 | ☐ | Template ต้องเป็น **Public** และติ๊ก **Template repository** | Module Lead กด **Use this template** สร้าง `dms-practice-team<N>` ใต้บัญชีตัวเอง (Public) ใน WS1.2 แล้วเชิญเพื่อน + `<INSTRUCTOR>` เป็น Collaborator — ผู้สอนไม่ต้องสร้าง repo ทีมเอง |
 | ☐ | แจ้งค่าบนจอก่อน WS1.2 | `<TEMPLATE>` และ `<INSTRUCTOR>` · ให้แต่ละทีมเลือก Module Lead ไว้ก่อน (คนที่คล่อง GitHub หรือคนที่อยากฝึกเป็นผู้ดูแล) |
 | ☐ | เก็บรายชื่อ repo ทีม | หลัง WS1.2 ให้ Module Lead ส่งลิงก์ `https://github.com/<OWNER>/<REPO>` มาในแชตห้อง แล้วกด Accept คำเชิญจากทุกทีม |
-| ☐ | การ์ดฟีเจอร์ 8 ใบ (A–H) สำหรับ WS3.3 | ช่วงพักกลางวันของวันที่ 1 (หลัง Accept คำเชิญแล้ว) รัน `bash workshops/scripts/seed-day1-features.sh <OWNER>/<REPO>` ทุก repo ทีม — สร้าง Label + Issue จาก [day1/feature-cards/](day1/feature-cards/) |
+| ☐ | การ์ดฟีเจอร์ 8 ใบ (A–H) สำหรับ WS3.3 | **ผู้เรียนเปิดเองใน WS3.1 ขั้นที่ 6** — ผู้สอนตรวจแท็บ Issues ของทุกทีมก่อนเริ่ม WS3.3 · **ทางสำรอง** (ทีมเปิดไม่ทัน): กด Accept คำเชิญของทีมนั้น แล้วรัน `bash workshops/scripts/seed-day1-features.sh <OWNER>/<REPO>` (สร้างครบ 8 ใบจาก [day1/feature-cards/](day1/feature-cards/) — ปิดใบที่ซ้ำ) |
 | ☐ | ซ้อมฟีเจอร์ Day 1 ทั้งทีม (Dry Run 90′) | ตามแผนใน [day1/features-backlog.md](day1/features-backlog.md) หัวข้อ 6 — เฉลยสำหรับ TA อยู่ใน [day1/solutions/](day1/solutions/README.md) (ห้ามใส่ใน Template) |
 | ☐ | ตรวจว่า `npm test` ผ่านใน Template | บนเครื่องสะอาดและใน CI (ดู WS4.1) |
 | ☐ | สคริปต์ Label + ไฟล์ Issue Template ตัวอย่าง | เตรียมไว้ให้ผู้เรียนคัดลอกจาก WS3.1 |

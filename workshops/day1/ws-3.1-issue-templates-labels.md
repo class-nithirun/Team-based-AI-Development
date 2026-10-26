@@ -4,9 +4,9 @@
 |---|---|
 | **ตำแหน่ง** | Day 1 · Session 3 |
 | **เวลา** | 25 นาที |
-| **รูปแบบ** | ทีม (คนที่ 1 ทำไฟล์ template · คนที่ 2 ทำ label · คนที่ 3 ทำ PR/Review · ที่เหลือเขียน Issue จริง) |
+| **รูปแบบ** | ทีม (คนที่ 1 ทำไฟล์ template · คนที่ 2 ทำ label · คนที่ 3 ทำ PR/Review · ระหว่างรอ ที่เหลืออ่าน spec ของการ์ดที่จะเปิด) แล้วทุกคนเปิดการ์ด A–H |
 | **สไลด์** | หน้า 97–103 (UBU SAGE Camp v2) |
-| **ผลลัพธ์** | repo ทีมมีแม่แบบ Issue 3 แบบ + ชุด Label มาตรฐาน และมี Issue จริง 1 ใบต่อคน |
+| **ผลลัพธ์** | repo ทีมมีแม่แบบ Issue 3 แบบ + ชุด Label มาตรฐาน และการ์ดฟีเจอร์ A–H ครบ 8 ใบ (ผู้เรียนเปิดเอง) |
 
 ## 🎯 เป้าหมาย
 
@@ -187,22 +187,44 @@ gh pr create --base main --fill
 
 ✅ **ต้องเห็น:** ตัวเลือก **Bug / Feature / Task**
 
-### ขั้นที่ 6 — เปิด Issue จริง 1 ใบต่อคน
+### ขั้นที่ 6 — เปิดการ์ดฟีเจอร์ A–H (คนละใบ จนครบ 8 ใบ)
 
-ใช้แม่แบบ **Feature** เขียนฟีเจอร์เล็ก ๆ ที่โมดูลของทีมน่าจะมี เช่น (ทีมค้นหา)
+การ์ดเหล่านี้คืองานที่ทีมจะหยิบทำใน [WS3.3](ws-3.3-sprint-planning.md) — แบ่งกันในทีมว่าใครเปิดใบไหน (ทีมน้อยกว่า 8 คน → บางคนเปิด 2 ใบ)
 
-> **User story:** ในฐานะเจ้าหน้าที่ ฉันต้องการค้นเอกสารด้วยแท็ก เพื่อหาเอกสารได้เร็ว
+| การ์ด | หัวข้อ Issue | โมดูล (dropdown) | Label priority | spec ใน repo ทีม |
+|---|---|---|---|---|
+| A | `[Feature]: A — แก้ไขประกาศ` | edit | `priority: high` | `docs/specs/A-edit.md` |
+| B | `[Feature]: B — ค้นหาประกาศ` | search | `priority: high` | `docs/specs/B-search.md` |
+| C | `[Feature]: C — ปักหมุดประกาศ` | pin | `priority: medium` | `docs/specs/C-pin.md` |
+| D | `[Feature]: D — หมวดหมู่ประกาศ` | category | `priority: medium` | `docs/specs/D-category.md` |
+| E | `[Feature]: E — สรุปสถิติ` | stats | `priority: low` | `docs/specs/E-stats.md` |
+| F | `[Feature]: F — ปุ่มรับทราบ` | ack | `priority: medium` | `docs/specs/F-ack.md` |
+| G | `[Feature]: G — ส่งออก CSV` | export | `priority: low` | `docs/specs/G-export.md` |
+| H | `[Feature]: H — ธีมมืด/สว่าง + เวลาแบบสัมพัทธ์` | theme | `priority: low` | `docs/specs/H-theme.md` |
+
+กรอกแม่แบบ **Feature**:
+
+1. **User story** — อ่านหัวข้อ 1 ของ spec แล้วเขียนเป็น "ในฐานะ… ฉันต้องการ… เพื่อ…" (ดูตัวอย่างได้ที่ [feature-cards/](feature-cards/) ของ repo หลักสูตร)
+2. **Acceptance Criteria** — เลือก 3 ข้อสำคัญจากหัวข้อ 7 ของ spec เป็น checkbox แล้วเติมบรรทัดสุดท้าย `รายละเอียดครบ: docs/specs/<การ์ด>.md หัวข้อ 7`
+3. **ขอบเขต** — วางลิงก์ spec (AI กับเพื่อนจะเปิดจากการ์ดได้ทันที)
+4. เลือกโมดูล → **Create** → ติด Label `module: <โมดูล>` และ `priority: …` ตามตาราง
+
+ตัวอย่างการ์ด A:
+
+> **User story:** ในฐานะเจ้าหน้าที่ ฉันต้องการแก้ไขหัวข้อหรือรายละเอียดของประกาศที่โพสต์ไปแล้ว เพื่อแก้คำผิดได้โดยไม่ต้องลบแล้วสร้างใหม่
 > **Acceptance Criteria:**
-> - [ ] ค้นด้วยแท็กหนึ่งแท็กแล้วได้เฉพาะเอกสารที่มีแท็กนั้น
-> - [ ] ถ้าไม่มีเอกสารที่ตรง คืนรายการว่าง (ไม่ใช่ error)
-> - [ ] ไม่มี Token → 401
+> - [ ] PATCH หัวข้อแล้วได้ค่าใหม่ ฟิลด์ที่ไม่ได้ส่งยังเป็นค่าเดิม
+> - [ ] ส่งหัวข้อว่าง → 400 พร้อมข้อความ error
+> - [ ] แก้ประกาศที่ไม่มีอยู่ → 404
+> - รายละเอียดครบ: `docs/specs/A-edit.md` หัวข้อ 7
 
-แล้วติด Label: `type: feature`, `module: <โมดูลของทีม>`, `priority: medium`
+> ทีมไหนเวลาไม่พอ ผู้สอนสร้างการ์ดที่ขาดให้ด้วยสคริปต์สำรอง (ดูหมายเหตุผู้สอนท้ายไฟล์)
 
 ## ✅ Checkpoint (ตรวจตัวเอง)
 
 - [ ] New issue แสดงตัวเลือก 3 แบบและไม่มี "Open a blank issue"
-- [ ] Issue ของคุณมี Acceptance Criteria เป็น checkbox อย่างน้อย 3 ข้อ ที่ **ตรวจได้**
+- [ ] repo ทีมมีการ์ด A–H ครบ 8 ใบ (แท็บ Issues)
+- [ ] การ์ดของคุณมี Acceptance Criteria เป็น checkbox อย่างน้อย 3 ข้อ ที่ **ตรวจได้** + ลิงก์ spec
 - [ ] ติด Label ครบ type / module / priority
 
 ## 🔧 ปัญหาที่พบบ่อย
@@ -223,5 +245,6 @@ gh pr create --base main --fill
 - เชื่อมกับ Day 2: AC ที่ตรวจได้ = โจทย์ที่ AI เข้าใจตรงกัน และเป็นเกณฑ์ของ "ประตูมนุษย์ที่ 1" (5 คำถามก่อนอนุมัติ Spec)
 - ถ้า repo ใช้ GitHub **Issue types** (Bug/Feature/Task ระดับ Organization) ได้ ให้ผู้สอนตัดสินใจว่าจะใช้ควบกับ label หรือไม่ — เอกสารนี้ใช้ label เพราะรองรับทุกแพ็กเกจ
 - แจกไฟล์ yml/สคริปต์ label ให้คัดลอกได้เลย ใช้เวลาไปกับการ **เขียน AC** ไม่ใช่การพิมพ์ YAML
+- **สคริปต์สำรอง:** ทีมที่เปิดการ์ดไม่ครบก่อน WS3.3 → ผู้สอน (ต้องเป็น Collaborator ของ repo ทีม) รันจากรากรีโปหลักสูตร `bash workshops/scripts/seed-day1-features.sh <OWNER>/<REPO>` — สคริปต์สร้าง **ทั้ง 8 ใบ** ใหม่ ถ้าทีมเปิดไว้บางใบแล้วให้ปิดใบซ้ำ (Close as duplicate) หรือสร้างใบที่ขาดด้วย `gh issue create -R <OWNER>/<REPO> --title "<หัวข้อ>" --body-file workshops/day1/feature-cards/<ไฟล์>.md --label "type: feature" --label "module: <โมดูล>" --label "priority: <ระดับ>"`
 
 **ต่อไป →** [WS3.2 สร้าง Kanban Board](ws-3.2-kanban-board.md)

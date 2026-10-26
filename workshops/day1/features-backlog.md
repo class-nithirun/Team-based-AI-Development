@@ -78,9 +78,9 @@ test/helpers.js  ──ใช้ร่วม──►  test/<ฟีเจอร�
 | ☐ | งาน | วิธี / หมายเหตุ |
 |---|---|---|
 | ☐ | Template repo มี practice-app ล่าสุด (stub 8 ฟีเจอร์ + `AGENTS.md` + `docs/` + `.clinerules/`) | คัดลอก `practice-app/` ไปที่รากของ template **ยกเว้น `.github/`** (เฉลย WS4.1) |
-| ☐ | ใส่เลข Issue ในหัว spec แต่ละฉบับ (ทางเลือก) | หลังรันสคริปต์ seed จะรู้เลข Issue — แก้ช่อง **Issue** ในหัว spec ของ repo ทีมได้ หรือปล่อยให้ผู้เรียนเติมเอง |
+| ☐ | ใส่เลข Issue ในหัว spec แต่ละฉบับ (ทางเลือก) | หลังทีมเปิดการ์ดใน WS3.1 จะรู้เลข Issue — แก้ช่อง **Issue** ในหัว spec ของ repo ทีมได้ หรือปล่อยให้ผู้เรียนเติมเอง |
 | ☐ | repo ทีม `dms-practice-team1…5` | **Module Lead สร้างเองใน WS1.2** (Use this template → Public) แล้วเชิญผู้สอน — ผู้สอนกด Accept ทุกทีม |
-| ☐ | สร้าง Label + การ์ด 8 ใบในทุก repo ทีม | ช่วงพักกลางวัน: `bash workshops/scripts/seed-day1-features.sh <OWNER>/<REPO>` (รันจากรากรีโปหลักสูตร) |
+| ☐ | การ์ด 8 ใบในทุก repo ทีม | **ผู้เรียนเปิดเองใน WS3.1 ขั้นที่ 6** · ทางสำรองสำหรับทีมที่ไม่ทัน: `bash workshops/scripts/seed-day1-features.sh <OWNER>/<REPO>` (รันจากรากรีโปหลักสูตร — สร้างครบ 8 ใบ ปิดใบที่ซ้ำ) |
 | ☐ | เพิ่มการ์ดเข้า Board ของทีม (ถ้าสร้าง Board ล่วงหน้า) | `gh project item-add <เลข> --owner <OWNER> --url <issue-url>` หรือให้ผู้เรียนทำใน WS3.2 |
 | ☐ | ตรวจว่า `npm ci && npm run lint && npm test` ผ่านใน repo ทีม | บนเครื่องสะอาด 1 เครื่อง |
 

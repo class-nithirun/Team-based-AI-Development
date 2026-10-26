@@ -30,7 +30,7 @@
 1. เปิด `https://github.com/<TEMPLATE>` → กดปุ่ม **Use this template** → **Create a new repository**
 2. **Owner:** บัญชีของตัวเอง · **Repository name:** `dms-practice-team<N>` · เลือก **Public** (Ruleset ใช้ได้ฟรีกับ repo สาธารณะ)
 3. กด **Create repository**
-4. **Settings → Collaborators → Add people** เชิญทุกคนในทีม และ `<INSTRUCTOR>` (ให้ผู้สอนใส่การ์ดฟีเจอร์ให้ใน Session 3)
+4. **Settings → Collaborators → Add people** เชิญทุกคนในทีม และ `<INSTRUCTOR>` (ผู้สอนช่วยดูงานและรีวิว PR ของทีม)
 5. ส่ง URL ของ repo ให้เพื่อนในทีม (เช่น แชตกลุ่ม)
 
 ✅ **ต้องเห็น:** repo `<OWNER>/dms-practice-team<N>` มี `README.md`, `CONTRIBUTORS.md` และหน้า Collaborators แสดงเพื่อนสถานะ Pending invite
@@ -135,7 +135,7 @@ git push -u origin feat/hello-<ชื่อ>
 
 ## 🧑‍🏫 หมายเหตุสำหรับผู้สอน/TA
 
-- ให้ทีมเลือก Module Lead ก่อนเริ่ม WS นี้ (คนที่คล่อง GitHub ที่สุด หรือคนที่อยากฝึกเป็นผู้ดูแล) และตรวจว่าทุกทีมเชิญ `<INSTRUCTOR>` แล้ว — ผู้สอนต้องมีสิทธิ์เพื่อใส่การ์ดฟีเจอร์ก่อน Session 3
+- ให้ทีมเลือก Module Lead ก่อนเริ่ม WS นี้ (คนที่คล่อง GitHub ที่สุด หรือคนที่อยากฝึกเป็นผู้ดูแล) และตรวจว่าทุกทีมเชิญ `<INSTRUCTOR>` แล้ว — ผู้สอนต้องมีสิทธิ์เพื่อช่วยรีวิว และสร้างการ์ดฟีเจอร์ให้ด้วยสคริปต์สำรองถ้าทีมเปิดไม่ทันใน WS3.1
 - ถ้า Ruleset ยังไม่เปิดใน repo ฝึกหัด ผู้เรียน push กิ่งได้ปกติ (กิ่ง ≠ main) การ merge เข้า `main` จะทำใน WS2.1
 - ใช้ `CONTRIBUTORS.md` เป็นไฟล์ฝึกเพราะ conflict-free เมื่อแต่ละคนเพิ่มบรรทัดคนละบรรทัด (ถ้าเกิด conflict จริง ใช้เป็นตัวอย่างสอนได้)
 - สังเกตผู้เรียนที่ commit เข้า `main` ตรง ๆ ได้ (ก่อนเปิด Ruleset) — ชวนให้เห็นว่าทำไม WS2.3 จึงบังคับด้วยระบบ
