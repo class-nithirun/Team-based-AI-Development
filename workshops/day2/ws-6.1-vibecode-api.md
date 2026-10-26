@@ -5,7 +5,7 @@
 | **ตำแหน่ง** | Day 2 · Session 6 |
 | **เวลา** | 75 นาที (10:45–12:00) |
 | **รูปแบบ** | รายบุคคล (เจ้าของโมดูล) |
-| **สไลด์** | หน้า 197–200 (UBU SAGE Camp v2) |
+| **สไลด์** | หน้า 198–201 (UBU SAGE Camp v2) |
 | **ผลลัพธ์** | API ของโมดูลเรียกด้วย curl ได้ + เทสต์ชั้น API ผ่าน + handoff ก่อนพักเที่ยง |
 
 > ทำใน repo `ubu-biolink` branch กลุ่มที่แตกจาก `instructor/revamp-workshop-base` — รายละเอียดเต็มอยู่ใน `docs/workshop/README.md` ของ repo นั้น

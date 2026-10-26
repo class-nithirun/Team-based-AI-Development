@@ -5,7 +5,7 @@
 | **ตำแหน่ง** | Day 1 · Session 4 |
 | **เวลา** | 15 นาที |
 | **รูปแบบ** | ทีม — Module Lead ออก Release คนอื่นตรวจ |
-| **สไลด์** | หน้า 149–155 (UBU SAGE Camp v2) |
+| **สไลด์** | หน้า 150–156 (UBU SAGE Camp v2) |
 | **ผลลัพธ์** | Release `v0.0.1` พร้อม Tag และ Release Notes ใน repo ของทีม |
 
 ## 🎯 เป้าหมาย

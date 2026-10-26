@@ -1,6 +1,6 @@
 # Loop ของ 1 การ์ด — ทำตามนี้ทั้งวัน (Day 2)
 
-> ใบนี้พิมพ์ได้ (A4) ที่ [loop-1-card.pdf](loop-1-card.pdf) · สไลด์หน้า 168 (UBU SAGE Camp v2)
+> ใบนี้พิมพ์ได้ (A4) ที่ [loop-1-card.pdf](loop-1-card.pdf) · สไลด์หน้า 169 (UBU SAGE Camp v2)
 > **1 การ์ด = 1 Issue = 1 branch = 1 spec = 1 PR** — ใช้ทุกอย่างจากวันที่ 1: Issue · Board · branch · commit · PR · CI · Review
 
 แทน `<g>` = ชื่อกลุ่ม (`academic` `teaching` `services` `community`) · `<card>` = ชื่อการ์ด เช่น `academic-cv` · `#N` = เลข Issue ของการ์ด

@@ -5,7 +5,7 @@
 | **ตำแหน่ง** | Day 2 · Session 5 |
 | **เวลา** | 45 นาที (09:20–10:05) |
 | **รูปแบบ** | กลุ่ม — ผู้ประสานเป็นคนเดียวที่เขียนไฟล์ |
-| **สไลด์** | หน้า 187–192 (UBU SAGE Camp v2) |
+| **สไลด์** | หน้า 188–193 (UBU SAGE Camp v2) |
 | **ผลลัพธ์** | `docs/workshop/designs/group-N.md` กรอกครบ |
 
 > ทำใน repo `ubu-biolink` branch กลุ่มที่แตกจาก `instructor/revamp-workshop-base` — รายละเอียดเต็มอยู่ใน `docs/workshop/README.md` ของ repo นั้น

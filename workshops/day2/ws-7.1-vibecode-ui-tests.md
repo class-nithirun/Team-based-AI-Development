@@ -5,7 +5,7 @@
 | **ตำแหน่ง** | Day 2 · Session 7 |
 | **เวลา** | 90 นาที (13:00–14:30) |
 | **รูปแบบ** | รายบุคคล (เจ้าของโมดูล) |
-| **สไลด์** | หน้า 201–203 (UBU SAGE Camp v2) |
+| **สไลด์** | หน้า 202–204 (UBU SAGE Camp v2) |
 | **ผลลัพธ์** | โมดูลถึง Core Done และเปิด PR `feature/<การ์ด>` → `feature/<กลุ่ม>` |
 
 > ทำใน repo `ubu-biolink` branch กลุ่มที่แตกจาก `instructor/revamp-workshop-base` — รายละเอียดเต็มอยู่ใน `docs/workshop/README.md` ของ repo นั้น
