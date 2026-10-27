@@ -16,13 +16,13 @@
 | ☐ | Team ย่อย `team-1` … `team-5` | แต่ละทีมผูกกับโมดูล (ใช้ใน `CODEOWNERS`) |
 | ☐ | เชิญผู้เรียนจาก GitHub username ในแบบสำรวจ | ส่งคำเชิญล่วงหน้า 2–3 วัน และเตือนให้กด Accept |
 | ☐ | Actions permissions | อนุญาต Actions ของ GitHub (`actions/*`); Workflow permissions: **Read and write** ถ้า Bot ต้อง comment (หรือกำหนด `pull-requests: write` ใน workflow) |
-| ☐ | ตรวจแพ็กเกจที่ใช้ได้ | Rulesets, required reviewers ของ Environment, Secret scanning / Push protection / Code scanning **ใช้ได้เฉพาะกับ repo สาธารณะหรือแพ็กเกจที่รองรับ** — ตรวจก่อนสัญญากับผู้เรียน · ตรวจแล้ว 24 ต.ค.: repo private ของบัญชีฟรีตอบ *"Upgrade to GitHub Pro or make this repository public"* → repo ฝึก Day 1 ตั้งเป็น **public** (`NcKitt/dms-practice-template`, `NcKitt/dms-practice-dryrun`) แล้ว Ruleset ใช้ได้ · BioLink (private) ต้องใช้ทางเลือกในหัวข้อ "แพ็กเกจ GitHub" ด้านล่าง |
+| ☐ | ตรวจแพ็กเกจที่ใช้ได้ | Rulesets, required reviewers ของ Environment, Secret scanning / Push protection / Code scanning **ใช้ได้เฉพาะกับ repo สาธารณะหรือแพ็กเกจที่รองรับ** — ตรวจก่อนสัญญากับผู้เรียน · ตรวจแล้ว 24 ต.ค.: repo private ของบัญชีฟรีตอบ *"Upgrade to GitHub Pro or make this repository public"* → repo ฝึก Day 1 ตั้งเป็น **public** (`NcKitt/sage_camp`, `NcKitt/dms-practice-dryrun`) แล้ว Ruleset ใช้ได้ · BioLink (private) ต้องใช้ทางเลือกในหัวข้อ "แพ็กเกจ GitHub" ด้านล่าง |
 
 ## B. Repo ฝึกหัด Day 1
 
 | ☐ | งาน | รายละเอียด |
 |---|---|---|
-| ☐ | Template repo `dms-practice-template` | คัดลอกทุกไฟล์ใน [`practice-app/`](../practice-app/README.md) ไปไว้ที่ **ราก** ของ template (รวม `package-lock.json`, `.gitignore`, `.dockerignore`, `AGENTS.md`, `docs/`, `.clinerules/` แต่ **ไม่รวม `.github/`** ซึ่งเป็นเฉลยของ WS4.1) — มีสคริปต์ `dev`, `lint`, `test`, `start` + `Dockerfile`, `docker-compose.yml`, `ecosystem.config.cjs` สำหรับ WS4.5–4.6 แล้วตั้งเป็น Template repository |
+| ☐ | Template repo `sage_camp` | คัดลอกทุกไฟล์ใน [`practice-app/`](../practice-app/README.md) ไปไว้ที่ **ราก** ของ template (รวม `package-lock.json`, `.gitignore`, `.dockerignore`, `AGENTS.md`, `docs/`, `.clinerules/` แต่ **ไม่รวม `.github/`** ซึ่งเป็นเฉลยของ WS4.1) — มีสคริปต์ `dev`, `lint`, `test`, `start` + `Dockerfile`, `docker-compose.yml`, `ecosystem.config.cjs` สำหรับ WS4.5–4.6 แล้วตั้งเป็น Template repository |
 | ☐ | ซ้อม Deploy บนเครื่องสะอาด | `docker compose up -d --build` → `:8080` และ `pm2 start ecosystem.config.cjs` → `:3000` ทั้งบน Windows และ macOS อย่างละ 1 เครื่อง |
 | ☐ | ไฟล์ที่ต้องมีใน Template | `CONTRIBUTORS.md` (หัวข้อว่าง ๆ), `team-info.md` (มีบรรทัด `เวลาประชุมทีม: 10:00` สำหรับ WS2.2), `.gitignore` (มี `.env`), `.env.example`, `README.md` |
 | ☐ | Template ต้องเป็น **Public** และติ๊ก **Template repository** | Module Lead กด **Use this template** สร้าง `dms-practice-team<N>` ใต้บัญชีตัวเอง (Public) ใน WS1.2 แล้วเชิญเพื่อน + `<INSTRUCTOR>` เป็น Collaborator — ผู้สอนไม่ต้องสร้าง repo ทีมเอง |

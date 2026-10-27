@@ -17,7 +17,7 @@
 
 | ตัวแปร | ความหมาย | ค่า |
 |---|---|---|
-| `<TEMPLATE>` | Repo แม่แบบของ Day 1 (กด Use this template) | `NcKitt/dms-practice-template` (ผู้สอนแจ้ง) |
+| `<TEMPLATE>` | Repo แม่แบบของ Day 1 (กด Use this template) | `NcKitt/sage_camp` (ผู้สอนแจ้ง) |
 | `<OWNER>` | GitHub username ของ **Module Lead** = เจ้าของ repo ทีม | เช่น `somchai` |
 | `<REPO>` (Day 1) | Repo ฝึกหัดของทีม (Module Lead สร้างใน WS1.2) | `dms-practice-team<N>` |
 | `<INSTRUCTOR>` | GitHub username ของผู้สอน — เชิญเป็น Collaborator ทุก repo ทีม | ผู้สอนแจ้ง |

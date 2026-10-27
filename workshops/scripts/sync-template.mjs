@@ -1,8 +1,8 @@
-// ซิงก์ repo แม่แบบ (dms-practice-template) ให้ตรงกับ repo หลักสูตร
+// ซิงก์ repo แม่แบบ (sage_camp) ให้ตรงกับ repo หลักสูตร
 //   practice-app/ (ยกเว้น .github — เฉลย WS4.1)  →  รากของ template
 //   workshops/    (ยกเว้นสคริปต์นี้)              →  template/workshops/
 // ลิงก์ที่ชี้ออกนอก workshops/ ถูกแปลงให้ใช้ได้ใน template · ตรวจลิงก์สัมพัทธ์ทุกไฟล์ .md (ลิงก์เสีย → exit 1)
-// ใช้: node workshops/scripts/sync-template.mjs <โฟลเดอร์ clone ของ dms-practice-template>
+// ใช้: node workshops/scripts/sync-template.mjs <โฟลเดอร์ clone ของ sage_camp>
 // แล้วตรวจ `git status` ใน template · npm ci && npm run lint && npm test · commit + push เอง
 import fs from 'node:fs';
 import path from 'node:path';
@@ -12,7 +12,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '.
 const COURSE = 'https://github.com/class-nithirun/Team-based-AI-Development/blob/main';
 const dest = process.argv[2];
 if (!dest || !fs.existsSync(path.join(dest, '.git'))) {
-  console.error('ระบุโฟลเดอร์ clone ของ dms-practice-template เช่น ../dms-practice-template');
+  console.error('ระบุโฟลเดอร์ clone ของ sage_camp เช่น ../sage_camp');
   process.exit(1);
 }
 const SKIP = new Set(['.github', 'node_modules', '.env', 'data', 'sync-template.mjs']);
